@@ -15,13 +15,22 @@ body {
     margin-bottom: 360px;
     margin-right: 112px;
     margin-left: 112px;
-    width: 1920;
+    min-width: 1800px;
+    width: 1920px;
     border: 0;
     padding: 0;
 }
 
 img {
   width: 700px;
+}
+
+.artworks {
+  display: none;
+}
+
+.artworks.active {
+  display: block;
 }
 
 input::-webkit-input-placeholder {
@@ -69,15 +78,15 @@ input {
 }
 
 .small {
-    font-size: 20px
+    font-size: 13px;
 }
 
 .big {
-    font-size: 38px
+    font-size: 38px;
 }
 
 .standard {
-    font-size: 25px
+    font-size: 25px;
 }
 
 .row1 {
@@ -86,12 +95,12 @@ input {
 
 .column01 {
     float: left;
-    width: 33.33%;
+    width: 790px;
 }
 
 .column02 {
-    float: right;
-    width: 33.33%;
+    float: left;
+    width: 867px;
 }
 
 .column11 {
@@ -131,7 +140,7 @@ input {
 .titleHeader.fixed {
   position: fixed;
   top: 0;
-  width: 79%;
+  width: 1920px;
   box-sizing: border-box;
   z-index: 0;
 }
