@@ -3,7 +3,7 @@ const path    = require("path");
 
 const app = express();
 
-app.use(express.static('public'));
+app.use(express.static('exposedfiles'));
 app.engine('html', require('ejs').renderFile);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
