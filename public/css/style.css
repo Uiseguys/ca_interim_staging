@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+    font-family: "myfont";
+    src: url("../fonts/Everyday-Bold.woff2") format('woff');
+}
+
+body {
+    font-family: myfont;
+    font-size: 25px;
+    margin-top: 65px;
+    margin-bottom: 360px;
+    margin-right: 112px;
+    margin-left: 112px;
+    width: 1920;
+    border: 0;
+    padding: 0;
+}
+
+img {
+  width: 700px;
+}
+
+input::-webkit-input-placeholder {
+    font-family: myfont;
+    color: black;
+    font-size: 25px;
+    text-align: center;
+}
+
+input::-moz-placeholder {
+    font-family: myfont;
+    color: black;
+    font-size: 25px;
+    text-align: center;
+}
+
+input::-ms-input-placeholder {
+    font-family: myfont;
+    color: black;
+    font-size: 25px;
+    text-align: center;
+}
+
+input::-o-input-placeholder {
+    font-family: myfont;
+    color: black;
+    font-size: 25px;
+    text-align: center;
+}
+
+button {
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;a
+}
+
+input {
+  height: 32px;
+  width: 200px;
+  border-width: medium;
+  border-color: black;
+}
+
+.small {
+    font-size: 20px
+}
+
+.big {
+    font-size: 38px
+}
+
+.standard {
+    font-size: 25px
+}
+
+.row1 {
+    margin-top: 205px;
+}
+
+.column01 {
+    float: left;
+    width: 33.33%;
+}
+
+.column02 {
+    float: right;
+    width: 33.33%;
+}
+
+.column11 {
+    float: left;
+    width: 1316px;
+}
+
+.column12 {
+    float: right;
+    width: 347px;
+}
+
+.column21 {
+    float: left;
+    width: 365px;
+}
+
+.column22 {
+    float: right;
+    width: 951px;
+}
+
+.column31 {
+    float: left;
+}
+
+.column32 {
+    float: right;
+}
+
+.titleHeader {
+  position: relative;
+  z-index: 1;
+  background: #fff;
+}
+
+.titleHeader.fixed {
+  position: fixed;
+  top: 0;
+  width: 79%;
+  box-sizing: border-box;
+  z-index: 0;
+}
+
+.titleHeader.fixed.absolute {
+  position: absolute;
+}
+
+/* Clear floats after the columns */
+.row2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row0:after {
+    content: "";
+    display: table;
+    clear: both;
+}
