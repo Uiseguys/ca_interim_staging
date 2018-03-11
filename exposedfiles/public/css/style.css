@@ -34,7 +34,7 @@ a {
 }
 
 .introBackground {
-  background-image: url("/public/images/christianawe_01139.jpg");
+  background-image: url("../images/christianawe_01139.jpg");
   background-size: 1920px;
   background-repeat: no-repeat;
   margin: 0px;
