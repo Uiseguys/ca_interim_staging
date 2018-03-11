@@ -24,6 +24,15 @@ a {
   color: black;
 }
 
+.overlap {
+  z-index: 3;
+  position: absolute;
+}
+
+.firstheader {
+  top: 65px;
+}
+
 .introBackground {
   background-image: url("/public/images/christianawe_01139.jpg");
   background-size: 1920px;
