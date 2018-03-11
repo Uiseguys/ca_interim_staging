@@ -42,7 +42,14 @@ a {
 }
 
 .artworks {
+  margin-top: 50px;
   display: none;
+}
+
+.art1, .art2, .art3 {
+  margin-top: 50px;
+  margin-bottom: 120px;
+  height: 900px;
 }
 
 .art1 {
@@ -113,6 +120,18 @@ input {
   margin-right: 15px;
   border-width: medium;
   border-color: black;
+}
+
+#project1 {
+  margin-bottom: 150px;
+}
+
+#project2 {
+  margin-bottom: 165px;
+}
+
+#project3 {
+  margin-bottom: 117px;
 }
 
 .contact {

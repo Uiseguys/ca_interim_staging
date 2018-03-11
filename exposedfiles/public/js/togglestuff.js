@@ -19,7 +19,7 @@ $(function(){
        $(".art1").toggleClass("active");
    });
 
-   $("body").click(function(){
+   $(".landing").click(function(){
        $("body").toggleClass("introBackground");
        $(".titleHeader").toggleClass("intro");
        $(".exhibitlist").toggleClass("hidden");
