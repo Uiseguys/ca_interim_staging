@@ -21,6 +21,10 @@ body {
     margin-left: 112px;
 }
 
+a {
+  color: black;
+}
+
 .introBackground {
   background-image: url("/public/images/christianawe_01139.jpg");
   background-size: 1920px;
@@ -149,6 +153,22 @@ input {
     float: right;
 }
 
+.column41 {
+    float: left;
+    width: 509px;
+}
+
+.column42 {
+    float: left;
+    width: 661px;
+    margin-right: 115px;
+}
+
+.column43 {
+    float: left;
+    width: 545px;
+}
+
 .titleHeader {
   position: relative;
   z-index: 1;
@@ -179,7 +199,25 @@ input {
 }
 
 /* Clear floats after the columns */
+.row4:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row3:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .row2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row1:after {
     content: "";
     display: table;
     clear: both;
