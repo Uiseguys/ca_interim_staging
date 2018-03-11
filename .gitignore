@@ -2,3 +2,4 @@
 .idea/misc.xml
 .git
 node_modules
+yarn.lock
