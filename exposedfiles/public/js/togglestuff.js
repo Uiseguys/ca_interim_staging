@@ -19,6 +19,36 @@ $(function(){
        $(".art1").toggleClass("active");
    });
 
+   $(".art1").on('swipeleft', function(){
+       $(".art1").toggleClass("active");
+       $(".art2").toggleClass("active");
+   });
+
+   $(".art2").on('swipeleft', function(){
+       $(".art2").toggleClass("active");
+       $(".art3").toggleClass("active");
+   });
+
+   $(".art3").on('swipeleft', function(){
+       $(".art3").toggleClass("active");
+       $(".art1").toggleClass("active");
+   });
+
+   $(".art1").on('swiperight', function(){
+       $(".art1").toggleClass("active");
+       $(".art3").toggleClass("active");
+   });
+
+   $(".art2").on('swiperight', function(){
+       $(".art2").toggleClass("active");
+       $(".art1").toggleClass("active");
+   });
+
+   $(".art3").on('swiperight', function(){
+       $(".art3").toggleClass("active");
+       $(".art2").toggleClass("active");
+   });
+
    $(".landing").click(function(){
        $("body").toggleClass("introBackground");
        $(".titleHeader").toggleClass("intro");
