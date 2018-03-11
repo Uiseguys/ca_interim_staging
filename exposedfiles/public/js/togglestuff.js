@@ -18,4 +18,11 @@ $(function(){
        $(".art3").toggleClass("active");
        $(".art1").toggleClass("active");
    });
+
+   $(".landing").click(function(){
+       $("body").toggleClass("introBackground");
+       $(".titleHeader").toggleClass("intro");
+       $(".exhibitlist").toggleClass("hidden");
+       $(".landing").toggleClass("hidden");
+   });
 });

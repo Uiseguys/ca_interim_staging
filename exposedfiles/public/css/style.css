@@ -206,8 +206,13 @@ input {
   text-align: center;
 }
 
-.transparent {
+.intro {
   background-color: Transparent;
+  color: #fff;
+}
+
+.landing {
+  height: 1000px;
 }
 
 /* Clear floats after the columns */
