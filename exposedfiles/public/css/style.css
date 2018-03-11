@@ -43,6 +43,18 @@ a {
   display: none;
 }
 
+.art1 {
+  display: none;
+}
+
+.art2 {
+  display: none;
+}
+
+.art3 {
+  display: none;
+}
+
 .active {
   display: block;
 }
