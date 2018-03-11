@@ -28,6 +28,9 @@ a {
   background-image: url("/public/images/christianawe_01139.jpg");
   background-size: 1920px;
   background-repeat: no-repeat;
+  margin: 0px;
+  margin-top: 65px;
+  width: 1920px;
 }
 
 .artworkImg {
@@ -105,9 +108,20 @@ button {
 
 input {
   height: 32px;
-  width: 200px;
+  width: 215px;
+  margin-top: 40px;
+  margin-right: 15px;
   border-width: medium;
   border-color: black;
+}
+
+.contact {
+  margin-top: 125px;
+  margin-bottom: 200px;
+}
+
+.contactdetails {
+  margin-bottom: 57px;
 }
 
 .small {
@@ -139,6 +153,7 @@ input {
 .column11 {
     float: left;
     width: 1313px;
+    margin-bottom: 167px;
 }
 
 .column12 {
@@ -208,10 +223,21 @@ input {
 .intro {
   background-color: Transparent;
   color: #fff;
+  margin-left:112px;
+  margin-right:95px;
 }
 
 .landing {
-  height: 1000px;
+  height: 1015px;
+  width: 1920px;
+}
+
+.row4 {
+  margin-top: 122px;
+}
+
+.imprintdetails {
+  margin-bottom: 35px;
 }
 
 /* Clear floats after the columns */
