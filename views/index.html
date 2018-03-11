@@ -19,7 +19,7 @@
     <div class=row1>
       <div class=column12>
         <p class=big>New website on the way, be informed about Christians' works, exhibitions and projects</p>
-        <form action="https://loopback3-boilerplate.herokuapp.com/api/newsletter/subscribe" method="post">
+        <form action="" id="subscribeForm" method="post">
           <input type=text name="email" placeholder="your e-mail here" />
           <input type=text name="to" placeholder="your client email" />
           <input type=submit value=ok class=standard />
@@ -197,6 +197,24 @@
   <script src='../exposedfiles/public/js/jquery.mobile.custom.min.js'></script>
   <script src="../exposedfiles/public/js/sticky.js"></script>
   <script src="../exposedfiles/public/js/togglestuff.js"></script>
+  <script type="text/javascript">
+    (function ($) {
+      $(document).ready(function () {
+        $('#subscribeForm').submit(function (e) {
+          e.preventDefault();
+          $.ajax({
+            type: 'post',
+            url: 'https://loopback3-boilerplate.herokuapp.com/api/newsletter/subscribe',
+            data: $('#subscribeForm').serialize(),
+          }).done(function (data) {
+            alert(data);
+            $('#subscribeForm :text').val('');
+          });
+        })
+      });
+    })(jQuery);
+
+  </script>
 </body>
 
 </html>
