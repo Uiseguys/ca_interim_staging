@@ -11,13 +11,12 @@
 body {
     font-family: myfont;
     font-size: 25px;
-    min-width: 1800px;
-    width: 1920px;
+    width: 1713px;
     border: 0;
     padding: 0;
     margin-top: 65px;
     margin-bottom: 360px;
-    margin-right: 112px;
+    margin-right: 95px;
     margin-left: 112px;
 }
 
@@ -139,12 +138,12 @@ input {
 
 .column11 {
     float: left;
-    width: 1316px;
+    width: 1313px;
 }
 
 .column12 {
     float: right;
-    width: 347px;
+    width: 400px;
 }
 
 .column21 {
@@ -154,7 +153,7 @@ input {
 
 .column22 {
     float: right;
-    width: 951px;
+    width: 948px;
 }
 
 .column31 {
@@ -172,7 +171,7 @@ input {
 
 .column42 {
     float: left;
-    width: 661px;
+    width: 544px;
     margin-right: 115px;
 }
 
@@ -184,15 +183,15 @@ input {
 .titleHeader {
   position: relative;
   z-index: 1;
+  text-align: center;
+  width: 1713px;
   background: #fff;
 }
 
 .titleHeader.fixed {
   position: fixed;
   top: 0;
-  left: -20px;
-  text-align: center;
-  width: 1920px;
+  width: 1713px;
   box-sizing: border-box;
   z-index: 0;
 }

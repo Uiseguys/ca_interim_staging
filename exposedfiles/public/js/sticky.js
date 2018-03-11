@@ -64,5 +64,5 @@ var stickyHeaders = (function() {
 
 $(function() {
   // stickyHeaders.load($(".titleHeader"), 'followWrap1 column01');
-  stickyHeaders.load($(".titleHeader"), 'followWrap column02');
+  stickyHeaders.load($(".titleHeader"), 'followWrap');
 });
