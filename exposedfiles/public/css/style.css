@@ -158,6 +158,8 @@ input {
 .titleHeader.fixed {
   position: fixed;
   top: 0;
+  left: -20px;
+  text-align: center;
   width: 1920px;
   box-sizing: border-box;
   z-index: 0;

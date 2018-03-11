@@ -3,13 +3,13 @@ var stickyHeaders = (function() {
   var $window = $(window),
       $stickies;
 
-  var load = function(stickies) {
+  var load = function(stickies, classWrap) {
 
     if (typeof stickies === "object" && stickies instanceof jQuery && stickies.length > 0) {
 
       $stickies = stickies.each(function() {
 
-        var $thisSticky = $(this).wrap('<div class="followWrap" />');
+        var $thisSticky = $(this).wrap(`<div class="${classWrap}" />`);
 
         $thisSticky
             .data('originalPosition', $thisSticky.offset().top)
@@ -63,5 +63,6 @@ var stickyHeaders = (function() {
 })();
 
 $(function() {
-  stickyHeaders.load($(".titleHeader"));
+  // stickyHeaders.load($(".titleHeader"), 'followWrap1 column01');
+  stickyHeaders.load($(".titleHeader"), 'followWrap column02');
 });
