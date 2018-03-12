@@ -2,6 +2,24 @@ $(function(){
    $("#projectTitle1").click(function(){
        $(".artworks").toggleClass("active");
        $(".art1").toggleClass("active");
+       $("#actualtitle1").toggleClass("underline");
+   });
+
+   $("#projectTitle2").click(function(){
+       $("#actualtitle2").toggleClass("underline");
+   });
+
+   $("#projectTitle3").click(function(){
+       $("#actualtitle3").toggleClass("underline");
+   });
+
+   $("#projectTitle4").click(function(){
+       $("#actualtitle4").toggleClass("underline");
+   });
+
+   $("#newwebsite").click(function(){
+       $(".emailform").toggleClass("hidden");
+       $(".websiteword").toggleClass("underline");
    });
 
    $(".art1").click(function(){

@@ -59,6 +59,7 @@ a {
   margin-top: 50px;
   margin-bottom: 120px;
   height: 900px;
+  width: 70vw;
 }
 
 .art1 {
@@ -298,4 +299,12 @@ input[type=text] {
     content: "";
     display: table;
     clear: both;
+}
+
+.mobileonly {
+  display: none;
+}
+
+.firstpar {
+  margin-bottom: 30px;
 }

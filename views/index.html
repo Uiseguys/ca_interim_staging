@@ -10,7 +10,7 @@
 </head>
 
 <body class="introBackground">
-  <header>
+  <header class="desktoponly">
     <div class="titleHeader small intro">Christian Awe</div>
   </header>
   <div class="landing"></div>
@@ -18,28 +18,50 @@
     <div class="firstheader overlap small">currently working on</div>
     <div class=row1>
       <div class=column12>
-        <p class=big>New website on the way, be informed about Christians' works, exhibitions and projects</p>
-        <form action="" id="subscribeForm" method="post">
-          <input type=text name="email" placeholder="your e-mail here" />
-          <input type=text name="to" placeholder="your client email" />
-          <input type=submit value=ok class=standard />
-        </form>
+        <div class="desktoponly">
+          <p class="big">New website on the way, be informed about Christians' works, exhibitions and projects</p>
+          <form action="" id="subscribeForm" method="post">
+            <input type=text name="email" placeholder="your e-mail here" />
+            <input type=text name="to" placeholder="your client email" />
+            <input type=submit value=ok class=standard />
+          </form>
+        </div>
+        <div class="mobileonly">
+          <div id=newwebsite class="big">
+            <div class="underline websiteword">New website</div>
+            <div class="">on the way</div>
+          </div>
+          <div class="emailform standard hidden">
+            <p class="">be informed about Christians' works, exhibitions and projects</p>
+            <form action="" id="subscribeForm" method="post">
+              <input type=text name="email" placeholder="your e-mail here" /><br>
+              <input type=text name="to" placeholder="your client email" /><br>
+              <input type=submit value=ok class=standard />
+            </form>
+          </div>
+        </div>
       </div>
 
       <div class=column11>
         <div id="project1" class="row2">
-          <div class="column21 big">16.03. -
+          <div class="column21 big desktoponly">16.03. -
             <br>20.04.2018</div>
-          <div id="projectTitle1" class="column22 big">black | sea
-            <br>68projects
-            <br>Berlin</div>
+          <div id="projectTitle1" class="column22 big">
+            <div id=actualtitle1 class="underline">black | sea</div>
+            <div class="big mobileonly">16.03. -
+              <br>20.04.2018</div>
+            <div class="">68projects</div>
+            <div class="">Berlin</div>
+          </div>
           <div class=column22>
 
             <div class="artworks">
-              <div>Exhibition with works of Christian Awe
-                <br>and the georgian artist Levan Songulashvilli</div>
-              <div>68projects, Fasanenstr. 68, 10719 Berlin
-                <br>Opening: 16.03. 6 - 9 p.pm.</div>
+              <div class="desktoponly">
+                <div class="firstpar">Exhibition with works of Christian Awe
+                  <br>and the georgian artist Levan Songulashvilli</div>
+                <div>68projects, Fasanenstr. 68, 10719 Berlin
+                  <br>Opening: 16.03. 6 - 9 p.pm.</div>
+              </div>
               <div class="art1">
                 <img class="artworkImg" src="../exposedfiles/public/images/art1.jpg" />
                 <div class=row3>
@@ -75,32 +97,50 @@
                   </div>
                 </div>
               </div>
+
+              <div class="mobileonly">
+                <div class="firstpar">Exhibition with works of Christian Awe
+                  <br>and the georgian artist Levan Songulashvilli</div>
+                <div>68projects, Fasanenstr. 68, 10719 Berlin
+                  <br>Opening: 16.03. 6 - 9 p.pm.</div>
+              </div>
+
             </div>
 
           </div>
         </div>
         <div id="project2" class="row2">
-          <div class="column21 big">19.04. -
+          <div class="column21 big desktoponly">19.04. -
             <br>22.04.2018</div>
-          <div class="column22 big">Art Cologne
-            <br>with Galerie Ludorff
-            <br>Cologne</div>
+          <div id="projectTitle2" class="column22 big">
+            <div id=actualtitle2 class="underline">Art Cologne</div>
+            <div class="big mobileonly">19.04. -
+              <br>22.04.2018</div>
+            <div class="">with Galerie Ludorff</div>
+            <div class="">Cologne</div>
+          </div>
         </div>
 
         <div id="project3" class="row2">
-          <div class="column21 big">21.04. -
+          <div class="column21 big desktoponly">21.04. -
             <br>02.09.2018</div>
-          <div class="column22 big">Sezon Museum of
-            <br>Modern Art
-            <br>Karuizawa, Japan</div>
+          <div id="projectTitle3" class="column22 big">
+            <div id=actualtitle3 class="underline">Sezon Museum of<br>Modern Art</div>
+            <div class="big mobileonly">21.04. -
+              <br>02.09.2018</div>
+            <div class="">Karuizawa, Japan</div>
+          </div>
         </div>
 
         <div id="project4" class="row2">
-          <div class="column21 big">27.04. -
+          <div class="column21 big desktoponly">27.04. -
             <br>29.04.2018</div>
-          <div class="column22 big">Gallery
-            <br>Weekend Berlin
-            <br>Open Studio</div>
+          <div id="projectTitle4" class="column22 big">
+            <div id=actualtitle4 class="underline">Gallery<br>Weekend Berlin</div>
+            <div class="big mobileonly">27.04. -
+              <br>29.04.2018</div>
+            <div class="">Open Studio</div>
+          </div>
         </div>
 
       </div>
@@ -193,6 +233,9 @@
       </div>
     </div>
   </div>
+  <footer class="mobileonly">
+    <div class="titleHeader small intro">Christian Awe</div>
+  </footer>
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
   <script src='../exposedfiles/public/js/jquery.mobile.custom.min.js'></script>
   <script src="../exposedfiles/public/js/sticky.js"></script>
