@@ -75,5 +75,6 @@ $(function(){
        $(".landing").toggleClass("hidden");
        $(".arrow").toggleClass("hidden");
        $(".ellipsis").toggleClass("hidden");
+       stickyHeaders.load($(".sectionHeader"));
    });
 });

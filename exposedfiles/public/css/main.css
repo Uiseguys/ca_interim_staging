@@ -29,10 +29,6 @@ a {
   position: absolute;
 }
 
-.firstheader {
-  top: 65px;
-}
-
 .introBackground {
   background-image: url("../images/christianawe_01139.jpg");
   background-size: 1920px;
@@ -226,22 +222,29 @@ input[type=text] {
 }
 
 .titleHeader {
+	position: fixed;
+	text-align: center;
+	width: 1750px;
+	z-index: 2;
+	top: 60px;
+}
+
+.sectionHeader {
   position: relative;
   z-index: 1;
-  text-align: center;
-  width: 1713px;
+
   background: #fff;
 }
 
-.titleHeader.fixed {
-  position: fixed;
-  top: 0;
-  width: 1713px;
-  box-sizing: border-box;
-  z-index: 0;
+.sectionHeader.fixed {
+	position: fixed;
+	top: 60px;
+	width: 100%;
+	box-sizing: border-box;
+	z-index: 0;
 }
 
-.titleHeader.fixed.absolute {
+.sectionHeader.fixed.absolute {
   position: absolute;
 }
 
