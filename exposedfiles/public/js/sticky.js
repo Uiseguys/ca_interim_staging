@@ -4,7 +4,6 @@ var stickyHeaders = (function() {
       $stickies;
 
   var load = function(stickies, classWrap) {
-
     if (typeof stickies === "object" && stickies instanceof jQuery && stickies.length > 0) {
 
       $stickies = stickies.each(function() {

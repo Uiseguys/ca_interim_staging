@@ -69,11 +69,15 @@ $(function(){
 
    $(".landing").click(function(){
        $("body").toggleClass("introBackground");
-       $(".titleHeader").toggleClass("intro");
+       // $(".titleHeader").toggleClass("intro");
        $(".nameHeader").toggleClass("intro");
-       $(".exhibitlist").toggleClass("hidden");
-       $(".landing").toggleClass("hidden");
+       $(".exhibitlist").toggleClass("active");
+       $(".landing").toggleClass("active");
        $(".arrow").toggleClass("hidden");
        $(".ellipsis").toggleClass("hidden");
    });
+
+   // $(window).on('load', function() {
+   //   $(".exhibitlist").toggleClass("active");
+   // });
 });

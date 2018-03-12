@@ -228,15 +228,15 @@ input[type=text] {
 .titleHeader {
   position: relative;
   z-index: 1;
-  text-align: center;
-  width: 1713px;
+  /* text-align: center; */
+  width: 100%;
   background: #fff;
 }
 
 .titleHeader.fixed {
   position: fixed;
   top: 0;
-  width: 1713px;
+  width: 100%;
   box-sizing: border-box;
   z-index: 0;
 }
@@ -258,6 +258,7 @@ input[type=text] {
 }
 
 .landing {
+  display: none;
   height: 1015px;
   width: 1920px;
 }
@@ -307,4 +308,16 @@ input[type=text] {
 
 .firstpar {
   margin-bottom: 30px;
+}
+
+.exhibitlist {
+  display: none;
+}
+
+.exhibitlist.active {
+  display: block;
+}
+
+.landing.active {
+  display: block;
 }
