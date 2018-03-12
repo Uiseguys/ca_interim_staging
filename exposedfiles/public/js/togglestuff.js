@@ -70,7 +70,10 @@ $(function(){
    $(".landing").click(function(){
        $("body").toggleClass("introBackground");
        $(".titleHeader").toggleClass("intro");
+       $(".nameHeader").toggleClass("intro");
        $(".exhibitlist").toggleClass("hidden");
        $(".landing").toggleClass("hidden");
+       $(".arrow").toggleClass("hidden");
+       $(".ellipsis").toggleClass("hidden");
    });
 });
