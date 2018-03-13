@@ -31,14 +31,14 @@ var stickyHeaders = (function() {
             var $thisSticky = $(this),
                 $stickyPosition = $thisSticky.data('originalPosition');
 
-            if ($stickyPosition <= $window.scrollTop()+60) {
+            if ($stickyPosition <= $window.scrollTop() + 60) {
 
                 var $nextSticky = $stickies.eq(i + 1),
                     $nextStickyPosition = $nextSticky.data('originalPosition') - $thisSticky.data('originalHeight');
 
                 $thisSticky.addClass("fixed");
 
-                if ($nextSticky.length > 0 && $thisSticky.offset().top >= $nextStickyPosition) {
+                if ($nextSticky.length > 0 && $thisSticky.offset().top >= ($nextStickyPosition)) {
 
                     $thisSticky.addClass("absolute").css("top", $nextStickyPosition);
                 }
@@ -49,11 +49,12 @@ var stickyHeaders = (function() {
 
                 $thisSticky.removeClass("fixed");
 
-                if ($prevSticky.length > 0 && $window.scrollTop() <= $thisSticky.data('originalPosition') - $thisSticky.data('originalHeight')) {
+                if ($prevSticky.length > 0 && $window.scrollTop() <= $thisSticky.data('originalPosition') - $thisSticky.data('originalHeight') + 140) {
 
                     $prevSticky.removeClass("absolute").removeAttr("style");
                 }
             }
+
         });
     };
 

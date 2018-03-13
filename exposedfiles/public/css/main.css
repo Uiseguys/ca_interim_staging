@@ -17,7 +17,6 @@ body {
     margin-top: 65px;
     margin-bottom: 360px;
     margin-right: 95px;
-    margin-left: 112px;
 }
 
 a {
@@ -27,6 +26,10 @@ a {
 .overlap {
   z-index: 3;
   position: absolute;
+}
+
+.exhibitlist {
+	padding-left: 50px;
 }
 
 .introBackground {
@@ -151,7 +154,7 @@ input[type=text] {
 }
 
 .small {
-    font-size: 13px;
+    font-size: 18px;
 }
 
 .big {
@@ -183,7 +186,8 @@ input[type=text] {
 }
 
 .column12 {
-    float: right;
+	position: absolute;
+	right: 0;
     width: 400px;
 }
 
@@ -224,7 +228,7 @@ input[type=text] {
 .titleHeader {
 	position: fixed;
 	text-align: center;
-	width: 1750px;
+	width: 100vw;
 	z-index: 2;
 	top: 60px;
 }
@@ -232,8 +236,16 @@ input[type=text] {
 .sectionHeader {
   position: relative;
   z-index: 1;
+}
 
-  background: #fff;
+.sectionHeader span {
+	display: block;
+	transform: translate(0, 30px);
+	transition: transform ease-out 0.2s;
+}
+
+.sectionHeader.firstheader span {
+	transform: translate(0, 0);
 }
 
 .sectionHeader.fixed {
@@ -243,6 +255,11 @@ input[type=text] {
 	box-sizing: border-box;
 	z-index: 0;
 }
+
+.sectionHeader.fixed span {
+	transform: translate(0, 0);
+}
+
 
 .sectionHeader.fixed.absolute {
   position: absolute;
@@ -310,4 +327,29 @@ input[type=text] {
 
 .firstpar {
   margin-bottom: 30px;
+}
+
+
+@media only screen and (max-width: 1750px) {
+	
+	.imprintdetails {
+		font-size: 15px;
+	}
+	
+	.column41 {
+		width: 260px;
+		font-size: 15px;
+	}
+	
+	.column42 {
+		width: 270px;
+		font-size: 15px;
+	}
+	
+	.column43 {
+		width: 270px;
+		font-size: 15px;
+	}
+
+
 }
