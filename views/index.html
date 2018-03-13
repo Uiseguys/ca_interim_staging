@@ -21,10 +21,12 @@
         <div class="desktoponly">
           <p class="big">New website on the way, be informed about Christians' works, exhibitions and projects</p>
           <form action="" id="subscribeForm" method="post">
-            <input type=text name="email" placeholder="your e-mail here" />
-            <input type=text name="to" placeholder="your client email" />
+            <input type=text id="subscribeEmail" name="email" placeholder="your e-mail here" />
             <input type=submit value=ok class=standard />
           </form>
+          <div id="thankyou" style="display: none">
+            Thank you!
+          </div>
         </div>
         <div class="websiteformdiv mobileonly">
           <div id=newwebsite class="big">
@@ -34,8 +36,7 @@
           <div class="emailform standard hidden">
             <p class="">be informed about Christians' works, exhibitions and projects</p>
             <form action="" id="subscribeForm" method="post">
-              <input type=text name="email" placeholder="your e-mail here" /><br>
-              <input type=text name="to" placeholder="your client email" /><br>
+              <input type=text id="subscribeEmail" name="email" placeholder="your e-mail here" />
               <input type=submit value=ok class=standard />
             </form>
           </div>
@@ -125,7 +126,8 @@
           <div class="column21 big desktoponly">21.04. -
             <br>02.09.2018</div>
           <div id="projectTitle3" class="column22 big">
-            <div id=actualtitle3 class="underline">Sezon Museum of<br>Modern Art</div>
+            <div id=actualtitle3 class="underline">Sezon Museum of
+              <br>Modern Art</div>
             <div class="big mobileonly">21.04. -
               <br>02.09.2018</div>
             <div class="">Karuizawa, Japan</div>
@@ -136,7 +138,8 @@
           <div class="column21 big desktoponly">27.04. -
             <br>29.04.2018</div>
           <div id="projectTitle4" class="column22 big">
-            <div id=actualtitle4 class="underline">Gallery<br>Weekend Berlin</div>
+            <div id=actualtitle4 class="underline">Gallery
+              <br>Weekend Berlin</div>
             <div class="big mobileonly">27.04. -
               <br>29.04.2018</div>
             <div class="">Open Studio</div>
@@ -161,10 +164,12 @@
         <br>Tristan Lorenz, Frankfurt am Main</div>
     </div>
     <div class="mobileonly contact big">
-      <div class="contactdetails">Atelier<br>Christian Awe
+      <div class="contactdetails">Atelier
+        <br>Christian Awe
         <br>Siegfriedstr. 204a
         <br>10365 Berlin, Germany</div>
-      <div class="contactdetails">office<br>+49 30 84 41 99 40
+      <div class="contactdetails">office
+        <br>+49 30 84 41 99 40
         <br>info(at)christianawe.com</div>
       <div class="contactdetails">press inquiries:
         <br>presse@christianawe.com</div>
@@ -267,15 +272,42 @@
   <script type="text/javascript">
     (function ($) {
       $(document).ready(function () {
+
         $('#subscribeForm').submit(function (e) {
           e.preventDefault();
+
+          // const clientEmail = 'felixtoth@gmail.com';
+          const clientEmail = 'william_cd_8918@outlook.com';
+          const subscribeEmail = $('#subscribeEmail').val();
+
           $.ajax({
             type: 'post',
-            url: 'https://loopback3-boilerplate.herokuapp.com/api/newsletter/subscribe',
-            data: $('#subscribeForm').serialize(),
+            url: 'https://loopback3-boilerplate.herokuapp.com/api/email/send',
+            data: {
+              to: clientEmail,
+              template: 'newsletter_client.html',
+              subject: 'Someone subscribed to your newsletter',
+              data: {
+                email: subscribeEmail
+              }
+            },
           }).done(function (data) {
-            alert(data);
-            $('#subscribeForm :text').val('');
+            $.ajax({
+              type: 'post',
+              url: 'https://loopback3-boilerplate.herokuapp.com/api/email/send',
+              data: {
+                to: subscribeEmail,
+                template: 'newsletter_user.html',
+                subject: 'newsletter registration',
+                data: {
+                  email: subscribeEmail
+                }
+              },
+            }).done(function (data) {
+              $('#subscribeEmail').val('');
+              $('#subscribeForm').hide();
+              $('#thankyou').show();
+            });
           });
         })
       });
