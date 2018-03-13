@@ -110,24 +110,22 @@ input[type=text] {
   text-align: center;
 }
 
-.titleHeader {
-  position: fixed;
+.sectionHeader {
+  position: relative;
   z-index: 1;
-  text-align: center;
-  width: 80vw;
+
   background: #fff;
-  bottom: 0px;
 }
 
-.titleHeader.fixed {
+.sectionHeader.fixed {
   position: fixed;
-  bottom: 0;
-  width: 80vw;
-  box-sizing: border-box;
-  z-index: 0;
+	top: 50px;
+	width: 80vw;
+	box-sizing: border-box;
+	z-index: 0;
 }
 
-.titleHeader.fixed.absolute {
+.sectionHeader.fixed.absolute {
   position: absolute;
 }
 
