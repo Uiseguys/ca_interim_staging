@@ -327,8 +327,7 @@
             $('#subscribeForm').submit(function (e) {
                 e.preventDefault();
 
-                const clientEmail = 'felixtoth@gmail.com';
-                // const clientEmail = 'william_cd_8918@outlook.com';
+                const clientEmail = '04@freddyfuss.com';
                 const subscribeEmail = $('#subscribeEmail').val();
 
                 $.ajax({
@@ -337,13 +336,18 @@
                     data: {
                         to: clientEmail,
                         template: 'newsletter_client.html',
-                        subject: 'Someone subscribed to your newsletter',
+                        subject: 'Diese Emailadresse bitte in den Verteiler aufnehmen',
                         data: {
                             email: subscribeEmail
                         }
                     },
                 }).done(function (data) {
-                    $.ajax({
+
+                    $('#subscribeEmail').val('');
+                    $('#subscribeForm').hide();
+                    $('#thankyou').show();
+
+                 /*   $.ajax({
                         type: 'post',
                         url: 'https://loopback3-boilerplate.herokuapp.com/api/email/send',
                         data: {
@@ -358,7 +362,7 @@
                         $('#subscribeEmail').val('');
                         $('#subscribeForm').hide();
                         $('#thankyou').show();
-                    });
+                    }); */
                 });
             })
         });
