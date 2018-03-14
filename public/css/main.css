@@ -224,7 +224,7 @@ input[type=text] {
 	}
 	
 	.underline {
-		text-decoration: underline;
+		/*	text-decoration: underline; */
 	}
 	
 	.desktoponly {
