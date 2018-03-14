@@ -55,6 +55,12 @@ var stickyHeaders = (function() {
                 }
             }
 
+            if ($window.scrollTop() > 1000) {
+                $('.arrow').removeClass('hidden');
+            } else {
+                $('.arrow').addClass('hidden');
+            }
+
         });
     };
 

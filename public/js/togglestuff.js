@@ -73,7 +73,6 @@ $(function(){
        $(".nameHeader").toggleClass("intro");
        $(".content-container").toggleClass("hidden");
        $(".landing").toggleClass("hidden");
-       $(".arrow").toggleClass("hidden");
        $(".row4").toggleClass("hidden");
        $(".ellipsis").toggleClass("hidden");
        stickyHeaders.load($(".sectionHeader"));
@@ -87,11 +86,14 @@ $(function(){
             $(".nameHeader").toggleClass("intro");
             $(".content-container").toggleClass("hidden");
             $(".landing").toggleClass("hidden");
-            $(".arrow").toggleClass("hidden");
             $(".row4").toggleClass("hidden");
             $(".ellipsis").toggleClass("hidden");
             stickyHeaders.load($(".sectionHeader"));
         }
 
+    });
+
+    $(".arrow").click(function(ev) {
+        $('html, body').animate({scrollTop: '0px'}, 300);
     });
 });

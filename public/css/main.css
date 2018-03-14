@@ -56,7 +56,8 @@ input::-o-input-placeholder {
 
 form {
 	padding: 40px;
-	
+	width: 70%;
+	margin: 0 auto;
 }
 input[type=submit] {
 	background-color: transparent;
@@ -68,6 +69,9 @@ input[type=submit] {
 	height: 70px;
 	width: 70px;
 	line-height: 70px;
+	font-size: 25px;
+	font-family: myfont;
+	width: 100%;
 }
 
 input[type=text] {
@@ -77,6 +81,9 @@ input[type=text] {
 	border-width: 3px;
 	border-color: black;
 	vertical-align: middle;
+	font-size: 25px;
+	font-family: myfont;
+	text-align: center;
 }
 
 .input {
@@ -181,6 +188,10 @@ input[type=text] {
 	padding-top: 40px;
 }
 
+.firstheader {
+	padding-top: 30px;
+}
+
 
 /* mobile styles */
 	
@@ -226,9 +237,9 @@ input[type=text] {
 	
 	.arrow {
 		position: fixed;
-		bottom: 30px;
-		right: 10px;
-		background: #fff;
+		bottom: 60px;
+		right: 30px;
+		/* background: #fff; */
 		z-index: 4;
 	}
 	
@@ -378,6 +389,7 @@ input[type=text] {
 		height: 32px;
 		width: 32px;
 		line-height: 32px;
+		font-size: 15px;
 		vertical-align: middle;
 	}
 	
@@ -385,7 +397,13 @@ input[type=text] {
 		height: 32px;
 		width: 215px;
 		line-height: 32px;
+		font-size: 15px;
 		vertical-align: middle;
+		text-align: center;
+	}
+	
+	input[type=text]::placeholder {
+		font-size: 15px;
 	}
 	
 	#project1 {
@@ -487,6 +505,10 @@ input[type=text] {
 		width: 100vw;
 		z-index: 2;
 		top: 60px;
+	}
+	
+	.firstheader {
+		padding-top: 0px;
 	}
 	
 	.titleHeader.intro {
@@ -594,6 +616,10 @@ input[type=text] {
 		margin-bottom: 30px;
 		max-width: 360px;
 	}
+    
+    .contactdetails a {
+	    text-decoration: none;
+    }
 }
 
 
