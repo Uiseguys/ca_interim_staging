@@ -71,10 +71,27 @@ $(function(){
        $("body").toggleClass("introBackground");
        $(".titleHeader").toggleClass("intro");
        $(".nameHeader").toggleClass("intro");
-       $(".exhibitlist").toggleClass("hidden");
+       $(".content-container").toggleClass("hidden");
        $(".landing").toggleClass("hidden");
        $(".arrow").toggleClass("hidden");
+       $(".row4").toggleClass("hidden");
        $(".ellipsis").toggleClass("hidden");
        stickyHeaders.load($(".sectionHeader"));
    });
+
+    $(".nameHeader.intro").click(function(ev){
+        console.log(ev);
+        if($(ev.target).hasClass('intro')){
+            $("body").toggleClass("introBackground");
+            $(".titleHeader").toggleClass("intro");
+            $(".nameHeader").toggleClass("intro");
+            $(".content-container").toggleClass("hidden");
+            $(".landing").toggleClass("hidden");
+            $(".arrow").toggleClass("hidden");
+            $(".row4").toggleClass("hidden");
+            $(".ellipsis").toggleClass("hidden");
+            stickyHeaders.load($(".sectionHeader"));
+        }
+
+    });
 });
