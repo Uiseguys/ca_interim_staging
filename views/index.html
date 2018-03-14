@@ -24,11 +24,11 @@
 		<div class="column12">
 			<div class="desktoponly">
 				<p class="big">New website on the way, be informed about Christians' works, exhibitions and projects</p>
-				<form action="" id="subscribeForm" method="post">
-					<input type=text id="subscribeEmail" name="email" placeholder="your e-mail here"/>
+				<form action="" id="subscribeForm1" method="post">
+					<input type=text id="subscribeEmail1" name="email" placeholder="your e-mail here"/>
 					<input type=submit value=ok class=standard/>
 				</form>
-				<div id="thankyou" style="display: none">
+				<div id="thankyou1" style="display: none">
 					Thank you!
 				</div>
 			</div>
@@ -39,10 +39,13 @@
 				</div>
 				<div class="emailform standard hidden">
 					<p class="">be informed about Christians' works, exhibitions and projects</p>
-					<form action="" id="subscribeForm" method="post">
-						<input type=text id="subscribeEmail" name="email" placeholder="your e-mail here"/>
+					<form action="" id="subscribeForm2" method="post">
+						<input type=text id="subscribeEmail2" name="email" placeholder="your e-mail here"/>
 						<input type=submit value=ok class=standard/>
 					</form>
+					<div id="thankyou2" style="display: none">
+						Thank you!
+					</div>
 				</div>
 			</div>
 		</div>
@@ -331,12 +334,14 @@
 <script type="text/javascript">
     (function ($) {
         $(document).ready(function () {
+			console.log('hej here!');
+            $('#subscribeForm1').submit(function (e) {
+                console.log('try to submit!');
 
-            $('#subscribeForm').submit(function (e) {
                 e.preventDefault();
 
                 const clientEmail = '04@freddyfuss.com';
-                const subscribeEmail = $('#subscribeEmail').val();
+                const subscribeEmail = $('#subscribeEmail1').val();
 
                 $.ajax({
                     type: 'post',
@@ -351,9 +356,9 @@
                     },
                 }).done(function (data) {
 
-                    $('#subscribeEmail').val('');
-                    $('#subscribeForm').hide();
-                    $('#thankyou').show();
+                    $('#subscribeEmail1').val('');
+                    $('#subscribeForm1').hide();
+                    $('#thankyou1').show();
 
                  /*   $.ajax({
                         type: 'post',
@@ -372,7 +377,37 @@
                         $('#thankyou').show();
                     }); */
                 });
+            });
+
+            $('#subscribeForm2').submit(function (e) {
+                console.log('try to submit!');
+
+                e.preventDefault();
+
+                const clientEmail = '04@freddyfuss.com';
+                const subscribeEmail = $('#subscribeEmail2').val();
+
+                $.ajax({
+                    type: 'post',
+                    url: 'https://loopback3-boilerplate.herokuapp.com/api/email/send',
+                    data: {
+                        to: clientEmail,
+                        template: 'newsletter_client.html',
+                        subject: 'Diese Emailadresse bitte in den Verteiler aufnehmen',
+                        data: {
+                            email: subscribeEmail
+                        }
+                    },
+                }).done(function (data) {
+
+                    $('#subscribeEmail2').val('');
+                    $('#subscribeForm2').hide();
+                    $('#thankyou2').show();
+
+                });
             })
+
+
         });
     })(jQuery);
 

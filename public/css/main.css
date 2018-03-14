@@ -77,12 +77,14 @@ input[type=submit] {
 input[type=text] {
 	height: 70px;
 	width: 70vw;
-	line-height: 70px;
+	line-height: 25px;
 	border: 3px solid #000;
 	vertical-align: middle;
 	font-size: 25px;
 	font-family: "Everyday";
 	text-align: center;
+	-webkit-appearance: none;
+	border-radius: 0;
 }
 
 input[type=text]::placeholder {
@@ -181,7 +183,7 @@ input[type=text]::placeholder {
 	margin: 0 auto;
 }
 
-#thankyou {
+#thankyou1, #thankyou2 {
 	padding-top: 40px;
 }
 
@@ -393,10 +395,13 @@ input[type=text]::placeholder {
 	input[type=text] {
 		height: 32px;
 		width: 215px;
-		line-height: 32px;
+		line-height: 15px;
 		font-size: 15px;
 		vertical-align: middle;
 		text-align: center;
+		border-radius: 0;
+
+		
 	}
 	
 	input[type=text]::placeholder {
