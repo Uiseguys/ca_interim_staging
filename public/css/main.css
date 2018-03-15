@@ -27,28 +27,28 @@ a {
 }
 
 input::-webkit-input-placeholder {
-	font-family: "Everyday";
+	font-family: "Everyday", "Heebo";
 	color: black;
 	font-size: 25px;
 	text-align: center;
 }
 
 input::-moz-placeholder {
-	font-family: "Everyday";
+	font-family: "Everyday", "Heebo";
 	color: black;
 	font-size: 25px;
 	text-align: center;
 }
 
 input::-ms-input-placeholder {
-	font-family: "Everyday";
+	font-family: "Everyday", "Heebo";
 	color: black;
 	font-size: 25px;
 	text-align: center;
 }
 
 input::-o-input-placeholder {
-	font-family: "Everyday";
+	font-family: "Everyday", "Heebo";
 	color: black;
 	font-size: 25px;
 	text-align: center;
@@ -71,7 +71,7 @@ input[type=submit] {
 	width: 70px;
 	line-height: 70px;
 	font-size: 25px;
-	font-family: "Everyday";
+	font-family: "Everyday", "Heebo";
 }
 
 input[type=text] {
@@ -81,7 +81,7 @@ input[type=text] {
 	border: 3px solid #000;
 	vertical-align: middle;
 	font-size: 25px;
-	font-family: "Everyday";
+	font-family: "Everyday", "Heebo";
 	text-align: center;
 	-webkit-appearance: none;
 	border-radius: 0;
@@ -89,6 +89,7 @@ input[type=text] {
 
 input[type=text]::placeholder {
 	color: #000;
+	font-family: "Everyday", "Heebo";
 }
 
 .input {
@@ -142,6 +143,11 @@ input[type=text]::placeholder {
 
 .artworks .mobileonly > div {
 	padding: 0 7%;
+	text-align: left;
+}
+
+.contactdetails {
+	text-align: left;
 }
 
 .art1, .art2, .art3 {
@@ -179,7 +185,7 @@ input[type=text]::placeholder {
 }
 
 .websiteformdiv.mobileonly p {
-	max-width: 240px;
+	max-width: 260px;
 	margin: 0 auto;
 }
 
@@ -458,7 +464,7 @@ input[type=text]::placeholder {
 	.column12 {
 		position: absolute;
 		right: 0;
-		width: 330px;
+		width: 290px;
 		text-align: left;
 	}
 	
@@ -631,6 +637,14 @@ input[type=text]::placeholder {
 		text-decoration: underline;
 		cursor: pointer;
 	}
+    
+    a {
+	    text-decoration: none;
+    }
+	
+	a:hover {
+		text-decoration: underline;
+	}
 	
 }
 
@@ -641,6 +655,14 @@ input[type=text]::placeholder {
 	
 	.big {
 		font-size: 38px;
+	}
+	
+	.column12 {
+		width: 370px;
+	}
+	
+	.column12 p {
+		max-width: 380px;
 	}
 }
 
