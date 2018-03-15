@@ -75,11 +75,15 @@ $(function(){
        $(".landing").toggleClass("hidden");
        $(".row4").toggleClass("hidden");
        $(".ellipsis").toggleClass("hidden");
-       stickyHeaders.load($(".sectionHeader"));
+
+       if($(window).width() > 1023) {
+           stickyHeaders.load($(".sectionHeader"));
+       }
+
    });
 
     $(".nameHeader.intro").click(function(ev){
-        console.log(ev);
+
         if($(ev.target).hasClass('intro')){
             $("body").toggleClass("introBackground");
             $(".titleHeader").toggleClass("intro");
@@ -88,7 +92,10 @@ $(function(){
             $(".landing").toggleClass("hidden");
             $(".row4").toggleClass("hidden");
             $(".ellipsis").toggleClass("hidden");
-            stickyHeaders.load($(".sectionHeader"));
+            if($(window).width() > 1023) {
+                stickyHeaders.load($(".sectionHeader"));
+            }
+
         }
 
     });

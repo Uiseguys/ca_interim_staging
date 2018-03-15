@@ -24,6 +24,27 @@ var stickyHeaders = (function() {
         }
     };
 
+    var _saveCurrentPosition = function() {
+
+        if($stickies) {
+            $stickies.each(function () {
+
+                var $thisSticky = $(this);
+
+                if(!$thisSticky.hasClass('fixed')){
+                    $thisSticky
+                        .data('originalPosition', $thisSticky.offset().top)
+                        .data('originalHeight', $thisSticky.outerHeight())
+                        .parent()
+                        .height($thisSticky.outerHeight());
+
+                }
+
+            });
+        }
+
+    }
+
     var _whenScrolling = function() {
 
         $stickies.each(function(i) {
@@ -65,10 +86,16 @@ var stickyHeaders = (function() {
     };
 
     return {
-        load: load
+        load: load,
+        saveCurrentPosition: _saveCurrentPosition
     };
 })();
 
 $(function() {
-    // stickyHeaders.load($(".sectionHeader"));
+
+    if($(window).width() > 1023) {
+        $("body").click(function () {
+            stickyHeaders.saveCurrentPosition()
+        });
+    }
 });
