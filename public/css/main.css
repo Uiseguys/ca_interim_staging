@@ -318,7 +318,7 @@ input[type=text]::placeholder {
 	padding: 0 5% 5% 5%;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
 	
 	/* custom styles */
 	.small {
