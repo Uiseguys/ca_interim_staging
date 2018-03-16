@@ -52,7 +52,7 @@ var stickyHeaders = (function() {
             var $thisSticky = $(this),
                 $stickyPosition = $thisSticky.data('originalPosition');
 
-            if ($stickyPosition <= $window.scrollTop() + 60) {
+            if ($stickyPosition <= $window.scrollTop() + 100) {
 
                 var $nextSticky = $stickies.eq(i + 1),
                     $nextStickyPosition = $nextSticky.data('originalPosition') - $thisSticky.data('originalHeight');
