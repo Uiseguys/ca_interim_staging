@@ -1,0 +1,263 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: "Everyday";
+	src: url("http://localhost:9000/fonts/Everyday-Bold.woff2") format('woff');
+}
+
+html {
+	min-height: 100%;
+}
+
+body {
+	font-family: "Everyday", "Heebo";
+	font-size: 25px;
+	border: 0;
+	padding: 0;
+	text-align: center;
+	width: 100%;
+	overflow-x: hidden;
+	margin-left: 70px;
+	margin-right: 70px;
+	margin-top: 150px;
+}
+
+a {
+	color: black;
+}
+
+.landing {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: url("http://localhost:9000/images/splashscreen_bg.jpg");
+  background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+  z-index: 0;
+  height: 1015px;
+  width: 1920px;
+}
+
+.landingHeader {
+	position: fixed;
+	text-align: center;
+	width: 100vw;
+	z-index: 2;
+	top: 60px;
+	background: #fff;
+}
+
+.intro {
+	color: #fff;
+	background: Transparent;
+}
+
+.overlap {
+	z-index: 3;
+	position: absolute;
+}
+
+.sectionHeader {
+	position: relative;
+	z-index: 1;
+	text-align: left;
+	/*padding-left: 5%;*/
+}
+
+.sectionHeader span {
+	display: block;
+	transform: translate(0, 30px);
+	transition: transform ease-out 0.2s;
+}
+
+.sectionHeader.firstheader span {
+	transform: translate(0, 0);
+}
+
+.sectionHeader.fixed {
+	position: fixed;
+	top: 60px;
+	width: 100%;
+	box-sizing: border-box;
+	z-index: 2;
+}
+
+.sectionHeader.fixed span {
+	transform: translate(0, 0);
+}
+
+.sectionHeader.fixed.absolute {
+	position: absolute;
+}
+
+.big {
+	font-size: 38px;
+}
+
+.small {
+	font-size: 13px;
+}
+
+.standard {
+	font-size: 25px;
+}
+
+input::-webkit-input-placeholder {
+	font-family: "Everyday", "Heebo";
+	color: black;
+	font-size: 25px;
+	text-align: center;
+}
+
+input::-moz-placeholder {
+	font-family: "Everyday", "Heebo";
+	color: black;
+	font-size: 25px;
+	text-align: center;
+}
+
+input::-ms-input-placeholder {
+	font-family: "Everyday", "Heebo";
+	color: black;
+	font-size: 25px;
+	text-align: center;
+}
+
+input::-o-input-placeholder {
+	font-family: "Everyday", "Heebo";
+	color: black;
+	font-size: 25px;
+	text-align: center;
+}
+
+input[type=submit] {
+	background-color: transparent;
+	background-repeat: no-repeat;
+	border: none;
+	cursor: pointer;
+	overflow: hidden;
+	outline: none;
+	height: 70px;
+	width: 70px;
+	line-height: 70px;
+	font-size: 25px;
+	font-family: "Everyday", "Heebo";
+}
+
+input[type=text] {
+	height: 70px;
+	/*width: 70vw;*/
+	line-height: 25px;
+	border: 3px solid #000;
+	vertical-align: middle;
+	font-size: 25px;
+	font-family: "Everyday", "Heebo";
+	text-align: center;
+	-webkit-appearance: none;
+	border-radius: 0;
+}
+
+input[type=text]::placeholder {
+	color: #000;
+	font-family: "Everyday", "Heebo";
+}
+
+.input {
+	margin: auto;
+}
+
+.row2 .projTitle {
+	margin-bottom: 50px;
+}
+
+.gallery {
+	margin-bottom: 80px;
+}
+
+.par {
+	margin-bottom: 30px;
+}
+
+.artwork {
+	width: 700px;
+	height: 908px;
+}
+
+.img {
+	width: 700px;
+}
+
+.contact {
+	text-align: left;
+	margin-bottom: 100px;
+}
+
+.contactdetails {
+	margin-bottom: 55px;
+	/*padding-left: 10%;
+	padding-right: 10%;*/
+}
+
+.firstdetail {
+	margin-top: 70px;
+}
+
+.col11 {
+	float: left;
+	width: 1313px;
+	margin-bottom: 117px;
+	text-align: left;
+}
+
+.col12 {
+	position: absolute;
+	right: 70px;
+	width: 400px;
+	text-align: left;
+}
+
+.col21 {
+	float: left;
+	width: 513px;
+	/*margin-bottom: 167px;*/
+	text-align: left;
+}
+
+.col22 {
+	float: right;
+	width: 800px;
+	text-align: left;
+}
+
+.col31 {
+	float: left;
+	text-align: left;
+}
+
+.col32 {
+	float: right;
+	text-align: right;
+}
+
+/* Clear floats after the columns */
+.row1:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.row2:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.row3:after {
+	content: "";
+	display: table;
+	clear: both;
+}
