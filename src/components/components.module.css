@@ -5,7 +5,7 @@
 
 @font-face {
 	font-family: "Everyday";
-	src: url("http://localhost:9000/fonts/Everyday-Bold.woff2") format('woff');
+	src: url("../../public/fonts/Everyday-Bold.woff2") format('woff2');
 }
 
 html {
@@ -19,7 +19,7 @@ body {
 	padding: 0;
 	text-align: center;
 	width: 100%;
-	overflow-x: hidden;
+	overflow-x: auto;
 	margin-left: 70px;
 	margin-right: 70px;
 	margin-top: 150px;
@@ -33,7 +33,7 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  background-image: url("http://localhost:9000/images/splashscreen_bg.jpg");
+  background-image: url("../../public/images/splashscreen_bg.jpg");
   background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -206,6 +206,18 @@ input[type=text]::placeholder {
 	margin-top: 70px;
 }
 
+.imprintdetails {
+	margin-bottom: 50px;
+}
+
+.row4 {
+	margin-top: 70px;
+}
+
+.row1 {
+	width: 1713px;
+}
+
 .col11 {
 	float: left;
 	width: 1313px;
@@ -214,7 +226,7 @@ input[type=text]::placeholder {
 }
 
 .col12 {
-	position: absolute;
+	float: right;
 	right: 70px;
 	width: 400px;
 	text-align: left;
@@ -243,6 +255,25 @@ input[type=text]::placeholder {
 	text-align: right;
 }
 
+.col41, .col42, .col43 {
+	float: left;
+	text-align: left;
+}
+
+.col41 {
+	width: 20%;
+	margin-right: 5%
+}
+
+.col42 {
+	width: 25%;
+	margin-right: 10%
+}
+
+.col43 {
+	width: 30%;
+}
+
 /* Clear floats after the columns */
 .row1:after {
 	content: "";
@@ -257,6 +288,12 @@ input[type=text]::placeholder {
 }
 
 .row3:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.row4:after {
 	content: "";
 	display: table;
 	clear: both;
