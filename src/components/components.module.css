@@ -43,10 +43,9 @@ a {
 }
 
 .landingHeader {
-	position: fixed;
-	text-align: center;
 	width: 100vw;
-	z-index: 2;
+	text-align: center;
+	position: fixed;
 	top: 60px;
 	background: #fff;
 }
@@ -54,6 +53,7 @@ a {
 .intro {
 	color: #fff;
 	background: Transparent;
+	z-index: 2;
 }
 
 .overlap {
@@ -216,6 +216,24 @@ input[type=text]::placeholder {
 
 .row1 {
 	width: 1713px;
+}
+
+.sticky-one {
+	position: fixed;
+	top: 60px;
+}
+
+.sticky-two { background: #fff; }
+.sticky-three { background: #fff; }
+
+.sticky {
+	position: fixed;
+	top: 60px;
+}
+
+.Sticky {
+	width: 30%;
+	text-align: left;
 }
 
 .col11 {

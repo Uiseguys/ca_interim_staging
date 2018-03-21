@@ -1,17 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   // This is just here to demonstrate scroll. You can remove it :)
   height: 3000px;
+  margin: 0;
 }
 
 h3 { margin: 0; }
 
-.sticky-one { background: #da5347; }
+.sticky-one {
+  position: fixed;
+  background: #da5347;
+  top: 40px;
+}
 .sticky-two { background: #75ba50; }
 .sticky-three { background: #1b9edb; }
 
 .sticky {
 	position: fixed;
-	top: 0;
+	top: 40px;
 	left: 0;
 	right: 0;
 	border-radius: 0;
@@ -19,11 +29,26 @@ h3 { margin: 0; }
 }
 
 .Sticky {
+  width: 30%;
   padding: 20px;
   border-radius: 3px;
   font-size: 18px;
   color: #fff;
   margin-bottom: 20px;
+}
 
+.title {
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  padding: 20px;
+  border-radius: 3px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  background: magenta;
+  top: 40px;
+}
 
+.Entries {
+  margin-top: 150px;
 }

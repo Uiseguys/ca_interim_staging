@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './sticky.module.css';
+import styles from './components.module.css';
 
 export class Sticky extends React.Component {
   componentDidMount() {
@@ -22,9 +22,9 @@ export class Sticky extends React.Component {
         const stickyExit = parseInt(sticky.getAttribute('data-sticky-exit'), 10) || bottom;
 
         if (top >= stickyEnter && top <= stickyExit) {
-          sticky.classList.add('src-components----sticky-module---sticky---3LeYe');
+          sticky.classList.add('src-components----components-module---sticky---2kzpb');
         } else {
-          sticky.classList.remove('src-components----sticky-module---sticky---3LeYe');
+          sticky.classList.remove('src-components----components-module---sticky---2kzpb');
         }
       });
     });
