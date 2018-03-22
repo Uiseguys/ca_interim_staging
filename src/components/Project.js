@@ -15,9 +15,14 @@ class Project extends React.Component {
       <div className={styles.row2}>
         <div className={`${styles.col21} ${styles.big}`}>{this.props.date1}<br />{this.props.date2}</div>
         <div className={styles.col22}>
-          <div className={`${styles.projTitle} ${styles.big}`} onClick={() => this.setState((prevState) => {
-            return {showGallery: !prevState.showGallery}
-          })}>
+          <div className={`${styles.projTitle} ${styles.big}`} onClick={() => {
+            setTimeout(()=>{
+              this.props.recalculate();
+            }, 700);
+            return this.setState((prevState) => {
+              return {showGallery: !prevState.showGallery}
+            })
+          }}>
             {this.props.title1}<br />
             {this.props.title2}<br />
             {this.props.title3}
