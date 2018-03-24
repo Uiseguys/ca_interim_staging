@@ -1,6 +1,8 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: content-box;
+	line-height: 1.2;
 }
 
 @font-face {
@@ -19,10 +21,20 @@ body {
 	padding: 0;
 	text-align: center;
 	width: 100%;
-	overflow-x: auto;
-	margin-left: 70px;
+	overflow-x: hidden;
+	/* margin-left: 70px;
 	margin-right: 70px;
-	margin-top: 150px;
+	margin-top: 150px; */
+}
+
+form {
+	/* padding-left: 0;
+	padding-right: 0; */
+	margin: 0;
+	width: 300px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	display: block;
 }
 
 a {
@@ -34,7 +46,7 @@ a {
   top: 0;
   left: 0;
   background-image: url("../../public/images/splashscreen_bg.jpg");
-  background-size: 100%;
+  background-size: 130%;
 	background-repeat: no-repeat;
 	background-position: center;
   z-index: 0;
@@ -95,11 +107,11 @@ a {
 }
 
 .big {
-	font-size: 38px;
+	font-size: 29px;
 }
 
 .small {
-	font-size: 13px;
+	font-size: 15px;
 }
 
 .standard {
@@ -135,71 +147,74 @@ input::-o-input-placeholder {
 }
 
 input[type=submit] {
+	height: 32px;
+	width: 32px;
+	line-height: 32px;
+	font-size: 15px;
+	vertical-align: middle;
 	background-color: transparent;
 	background-repeat: no-repeat;
 	border: none;
 	cursor: pointer;
 	overflow: hidden;
 	outline: none;
-	height: 70px;
-	width: 70px;
-	line-height: 70px;
-	font-size: 25px;
 	font-family: "Everyday", "Heebo";
 }
 
 input[type=text] {
-	height: 70px;
-	/*width: 70vw;*/
-	line-height: 25px;
-	border: 3px solid #000;
+	height: 32px;
+	width: 215px;
+	line-height: 15px;
+	font-size: 15px;
 	vertical-align: middle;
-	font-size: 25px;
-	font-family: "Everyday", "Heebo";
 	text-align: center;
-	-webkit-appearance: none;
 	border-radius: 0;
+	border: 3px solid #000;
+	font-family: "Everyday", "Heebo";
+	-webkit-appearance: none;
 }
 
 input[type=text]::placeholder {
 	color: #000;
+	font-size: 15px;
 	font-family: "Everyday", "Heebo";
 }
 
-.input {
-	margin: auto;
-}
-
-.row2 .projTitle {
-	margin-bottom: 50px;
+.row2 {
+	margin-bottom: 90px;
 }
 
 .gallery {
-	margin-bottom: 80px;
+	margin-top: 50px;
 }
 
-.par {
+.firstpar {
 	margin-bottom: 30px;
+	max-width: 410px;
 }
 
 .artwork {
-	width: 700px;
-	height: 908px;
+	margin-top: 50px;
+	mnargin-bottom: 120px;
+	height: 900px;
+	width: 70vw;
 }
 
-.img {
+.img, .row3 {
 	width: 700px;
 }
 
 .contact {
+	margin-bottom: 155px;
+	margin-bottom: 200px;
 	text-align: left;
-	margin-bottom: 100px;
 }
 
 .contactdetails {
-	margin-bottom: 55px;
-	/*padding-left: 10%;
-	padding-right: 10%;*/
+	text-align: left;
+	padding-left: 5%;
+	padding-right: 10%;
+	margin-bottom: 57px;
 }
 
 .firstdetail {
@@ -207,15 +222,21 @@ input[type=text]::placeholder {
 }
 
 .imprintdetails {
-	margin-bottom: 50px;
+	margin-bottom: 35px;
 }
 
 .row4 {
-	margin-top: 70px;
+	margin-top: 152px;
 }
 
 .row1 {
 	width: 1713px;
+	margin-top: 235px;
+	padding-left: 5%;
+}
+
+.sticky-one, .sticky-two, .sticky-three {
+	padding-left: 5%
 }
 
 .sticky-one {
@@ -231,35 +252,46 @@ input[type=text]::placeholder {
 	top: 60px;
 }
 
-.Sticky {
+.StickyComp {
 	width: 30%;
 	text-align: left;
+}
+
+.underline {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.col12 p {
+	max-width: 280px;
 }
 
 .col11 {
 	float: left;
 	width: 1313px;
-	margin-bottom: 117px;
-	text-align: left;
+	margin-bottom: 167px;
+	/* text-align: left; */
 }
 
 .col12 {
-	float: right;
-	right: 70px;
-	width: 400px;
+	position: absolute;
+	right: 0;
+	width: 290px;
 	text-align: left;
+	margin-right: 10%;
 }
 
 .col21 {
 	float: left;
-	width: 513px;
+	min-width: 200px;
+	width: 20%;
 	/*margin-bottom: 167px;*/
 	text-align: left;
 }
 
 .col22 {
 	float: right;
-	width: 800px;
+	width: 80%;
 	text-align: left;
 }
 
@@ -276,20 +308,26 @@ input[type=text]::placeholder {
 .col41, .col42, .col43 {
 	float: left;
 	text-align: left;
+	padding: 0 5% 5% 5%;
+	margin-right: 0;
+	margin-top: 80px;
 }
 
 .col41 {
-	width: 20%;
-	margin-right: 5%
+	min-width: 200px;
+	width: 15%;
 }
 
 .col42 {
+	min-width: 200px;
 	width: 25%;
-	margin-right: 10%
 }
 
 .col43 {
-	width: 30%;
+	padding-bottom: 100px;
+	min-width: 200px;
+	width: 25%;
+	margin-right: 0;
 }
 
 /* Clear floats after the columns */

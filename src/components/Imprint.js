@@ -4,7 +4,7 @@ import styles from "./components.module.css"
 class ContactDetails extends React.Component {
   render () {
     return (
-      <div className={styles.row4}>
+      <div className={`${styles.row4} ${styles.small}`}>
         <div className={styles.col41}>
           <div className={styles.imprintdetails}>Responsible for
     				<br />the contents of this website

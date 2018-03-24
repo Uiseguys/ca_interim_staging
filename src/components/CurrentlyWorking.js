@@ -7,8 +7,8 @@ class CurrentlyWorking extends React.Component {
   render () {
     return (
       <div className={styles.row1}>
-        <ProjectList recalculate={this.props.recalculate}/>
         <Newsletter />
+        <ProjectList recalculate={this.props.recalculate}/>
       </div>
     )
   }

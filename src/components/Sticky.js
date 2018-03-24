@@ -33,7 +33,7 @@ export class Sticky extends React.Component {
   render() {
     const { className, enter, exit, children } = this.props;
     return (<div
-      className={`${styles.Sticky} ${styles[className]}`}
+      className={`${styles.StickyComp} ${styles[className]}`}
       data-sticky
       data-sticky-enter={enter}
       data-sticky-exit={exit}

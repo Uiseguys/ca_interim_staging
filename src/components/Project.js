@@ -23,9 +23,9 @@ class Project extends React.Component {
               return {showGallery: !prevState.showGallery}
             })
           }}>
-            {this.props.title1}<br />
-            {this.props.title2}<br />
-            {this.props.title3}
+            <div className={styles[this.props.className]}>{this.props.title1}</div>
+            <div>{this.props.title2}</div>
+            <div>{this.props.title3}</div>
           </div>
           {
             this.state.showGallery && this.props.hasPics ? <Gallery /> : null
