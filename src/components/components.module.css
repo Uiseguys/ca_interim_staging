@@ -42,16 +42,15 @@ a {
 }
 
 .landing {
+	height: 1015px;
+	width: 1920px;
   position: fixed;
   top: 0;
   left: 0;
   background-image: url("../../public/images/splashscreen_bg.jpg");
-  background-size: 130%;
+	background-position: top-left;
+  background-size: 100vw;
 	background-repeat: no-repeat;
-	background-position: center;
-  z-index: 0;
-  height: 1015px;
-  width: 1920px;
 }
 
 .landingHeader {
