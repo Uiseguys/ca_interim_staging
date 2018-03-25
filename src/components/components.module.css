@@ -203,32 +203,24 @@ input[type=text]::placeholder {
 
 .sticky-one, .sticky-two, .sticky-three {
 	padding-left: 5%;
-	/* transition: transform ease-out 0.2s; */
 }
 
 .sticky-one div {
-	/* transform: translate(0, 0); */
 	position: fixed;
 	top: 60px;
 	z-index: 1;
 }
-
-/* .sticky-two, .sticky-three {
-	transform: translate(0, 0px);
-} */
 
 .sticky-two div, .sticky-three div { z-index: 2; background: #fff; }
 
 .sticky div {
 	position: fixed;
 	top: 60px;
-	/* transform: translate(0, 0); */
 }
 
 .StickyComp div {
 	width: 30%;
 	text-align: left;
-	/* transform: translate(0, 0); */
 }
 
 .StickyComp {
