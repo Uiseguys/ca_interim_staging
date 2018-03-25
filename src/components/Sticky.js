@@ -16,14 +16,20 @@ export class Sticky extends React.Component {
       const top = document.documentElement.scrollTop || document.body.scrollTop;
       const bottom = document.documentElement.scrollHeight || document.body.scrollHeight;
 
-      [].forEach.call(stickies, (sticky) => {
+      [].forEach.call(stickies, (sticky, i, arr) => {
         const stickyInitial = parseInt(sticky.getAttribute('data-sticky-initial'), 10);
         const stickyEnter = parseInt(sticky.getAttribute('data-sticky-enter'), 10) || stickyInitial;
         const stickyExit = parseInt(sticky.getAttribute('data-sticky-exit'), 10) || bottom;
 
         if (top >= stickyEnter && top <= stickyExit) {
+          if (i > 0) {
+            arr[i-1].classList.add('src-components----components-module---absolute---2Sk1q');
+          }
           sticky.classList.add('src-components----components-module---sticky---2kzpb');
         } else {
+          if (i > 0) {
+            arr[i-1].classList.remove('src-components----components-module---absolute---2Sk1q');
+          }
           sticky.classList.remove('src-components----components-module---sticky---2kzpb');
         }
       });

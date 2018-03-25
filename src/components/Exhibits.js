@@ -20,11 +20,10 @@ class Exhibits extends React.Component {
   }
 
   recalculateEntryAndExit() {
-    console.log();
-    const firstStickyPos = document.querySelectorAll('[data-sticky]')[0].getBoundingClientRect().top;
-    const secondStickyPos = document.querySelectorAll('[data-sticky]')[1].getBoundingClientRect().top + document.documentElement.scrollTop;
-    const thirdStickyPos = document.querySelectorAll('[data-sticky]')[2].getBoundingClientRect().top + document.documentElement.scrollTop;
-    const headerHeight = document.querySelectorAll('[data-sticky]')[1].clientHeight;
+    const firstStickyPos = document.querySelectorAll('[data-sticky] div')[0].getBoundingClientRect().top;
+    const secondStickyPos = document.querySelectorAll('[data-sticky] div')[1].getBoundingClientRect().top + document.documentElement.scrollTop;
+    const thirdStickyPos = document.querySelectorAll('[data-sticky] div')[2].getBoundingClientRect().top + document.documentElement.scrollTop;
+    const headerHeight = document.querySelectorAll('[data-sticky] div')[1].clientHeight;
     this.setState({exit1entry2: (secondStickyPos - firstStickyPos).toString()});
     this.setState({exit2entry3: (thirdStickyPos - firstStickyPos - headerHeight).toString()});
   }

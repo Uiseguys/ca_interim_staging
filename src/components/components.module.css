@@ -46,10 +46,10 @@ a {
 	width: 1920px;
   position: fixed;
   top: 0;
-  left: 0;
+  left: -205px;
   background-image: url("../../public/images/splashscreen_bg.jpg");
 	background-position: top-left;
-  background-size: 100vw;
+  background-size: 130vw;
 	background-repeat: no-repeat;
 }
 
@@ -69,39 +69,6 @@ a {
 
 .overlap {
 	z-index: 3;
-	position: absolute;
-}
-
-.sectionHeader {
-	position: relative;
-	z-index: 1;
-	text-align: left;
-	/*padding-left: 5%;*/
-}
-
-.sectionHeader span {
-	display: block;
-	transform: translate(0, 30px);
-	transition: transform ease-out 0.2s;
-}
-
-.sectionHeader.firstheader span {
-	transform: translate(0, 0);
-}
-
-.sectionHeader.fixed {
-	position: fixed;
-	top: 60px;
-	width: 100%;
-	box-sizing: border-box;
-	z-index: 2;
-}
-
-.sectionHeader.fixed span {
-	transform: translate(0, 0);
-}
-
-.sectionHeader.fixed.absolute {
 	position: absolute;
 }
 
@@ -235,25 +202,44 @@ input[type=text]::placeholder {
 }
 
 .sticky-one, .sticky-two, .sticky-three {
-	padding-left: 5%
+	padding-left: 5%;
+	/* transition: transform ease-out 0.2s; */
 }
 
-.sticky-one {
+.sticky-one div {
+	/* transform: translate(0, 0); */
 	position: fixed;
 	top: 60px;
+	z-index: 1;
 }
 
-.sticky-two { background: #fff; }
-.sticky-three { background: #fff; }
+/* .sticky-two, .sticky-three {
+	transform: translate(0, 0px);
+} */
 
-.sticky {
+.sticky-two div, .sticky-three div { z-index: 2; background: #fff; }
+
+.sticky div {
 	position: fixed;
 	top: 60px;
+	/* transform: translate(0, 0); */
+}
+
+.StickyComp div {
+	width: 30%;
+	text-align: left;
+	/* transform: translate(0, 0); */
 }
 
 .StickyComp {
-	width: 30%;
-	text-align: left;
+	height: 30px;
+}
+
+.StickyComp.absolute div {
+	position: absolute;
+	/* transition: transform ease-out 0.2s;
+	transform: translate(0, -90px);
+	background: #fff; */
 }
 
 .underline {
