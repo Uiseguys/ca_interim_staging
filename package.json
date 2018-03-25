@@ -21,6 +21,7 @@
     "gatsby-link": "^1.6.39",
     "gatsby-plugin-react-helmet": "^2.0.5",
     "gatsby-plugin-react-next": "^1.0.10",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "react-swipe-events": "^1.0.3"
   }
 }
