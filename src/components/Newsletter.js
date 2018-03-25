@@ -6,6 +6,7 @@ class Newsletter extends React.Component {
     super(props)
     this.state = {
       subscribeEmail: '',
+      formVisible: true,
     };
     this.onSubmit = this.onSubmit.bind(this);
     this.onChange = this.onChange.bind(this);
@@ -30,7 +31,7 @@ class Newsletter extends React.Component {
       }
     })
     .then((res)=>{
-      console.log('success', res);
+      this.setState({subscribeEmail: '', formVisible: false });
     })
     .catch((err)=>{
       console.log('error', err);
@@ -38,7 +39,7 @@ class Newsletter extends React.Component {
   }
 
   onChange(e) {
-    return this.setState({ subscribeEmail:  e.target.value});
+    return this.setState({ subscribeEmail:  e.target.value, formVisible: true });
   }
 
   render () {
@@ -48,10 +49,16 @@ class Newsletter extends React.Component {
           <p className={styles.big}>
             {"New website on the way, be informed about Christians' works, exhibitions and projects"}
           </p>
-          <form action="https://loopback3-boilerplate.herokuapp.com/api/email/send" method="post" onSubmit={this.onSubmit}>
-  					<input type="text" name="email" placeholder="your e-mail here" value={this.state.subscribeEmail} onChange={this.onChange} />
-  					<input type="submit" value="ok" className={styles.standard}/>
-  				</form>
+          {
+            this.state.formVisible ?
+            <form action="https://loopback3-boilerplate.herokuapp.com/api/email/send" method="post" onSubmit={this.onSubmit}>
+            <input type="text" name="email" placeholder="your e-mail here" value={this.state.subscribeEmail} onChange={this.onChange} />
+            <input type="submit" value="ok" className={styles.standard}/>
+            </form> :
+            <div>
+            Thank you!
+            </div>
+          }
         </div>
       </div>
     )
