@@ -19,7 +19,7 @@ class ContactDetails extends React.Component {
     				presse@christianawe.com
     			</a>
     		</div>
-    		<div className={styles.contactdetails}>Galleries:
+    		<div className={`${styles.contactdetails} ${styles.alignleft}`}>Galleries:
     			<br />Ludorff (Düsseldorf)
     			<br />Ostendorf (Münster)
     			<br />Thomas Fuchs (Stuttgart)

@@ -12,7 +12,7 @@ class Project extends React.Component {
 
   render () {
     return (
-      <div className={styles.row2}>
+      <div className={`${styles.row2} ${styles[this.props.projNum]}`}>
         <div className={`${styles.col21} ${styles.big}`}>{this.props.date1}<br />{this.props.date2}</div>
         <div className={styles.col22}>
           <div className={`${styles.projTitle} ${styles.big}`} onClick={() => {

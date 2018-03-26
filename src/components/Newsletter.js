@@ -45,7 +45,7 @@ class Newsletter extends React.Component {
   render () {
     return (
       <div className={styles.col12}>
-        <div className={styles.desktoponly}>
+        <div className={`${styles.desktoponly} ${styles.websiteformdiv}`}>
           <p className={styles.big}>
             {"New website on the way, be informed about Christians' works, exhibitions and projects"}
           </p>
@@ -55,7 +55,7 @@ class Newsletter extends React.Component {
             <input type="text" name="email" placeholder="your e-mail here" value={this.state.subscribeEmail} onChange={this.onChange} />
             <input type="submit" value="ok" className={styles.standard}/>
             </form> :
-            <div>
+            <div className={styles.thankyou}>
             Thank you!
             </div>
           }

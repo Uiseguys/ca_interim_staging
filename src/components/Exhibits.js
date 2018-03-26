@@ -43,6 +43,9 @@ class Exhibits extends React.Component {
           <div>imprint</div>
         </Sticky>
         <Imprint />
+        <div className={`${styles.arrow} ${styles.big}`}>
+          &#8593;
+        </div>
       </div>
     )
   }
