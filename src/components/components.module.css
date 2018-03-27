@@ -620,6 +620,10 @@ input[type=text]::placeholder {
 	.sticky-one {
 		padding-top: 30px;
 	}
+
+	.wholecaption {
+		/* vertical-align: bottom; */
+	}
 }
 /* .gallery {
 	margin-top: 50px;
