@@ -28,7 +28,7 @@ module.exports = class HTML extends React.Component {
           {css}
           {this.props.headComponents}
 
-          <title>this is my title</title>
+          <title>Christian Awe</title>
 
           <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' crossOrigin='anonymous' />
 

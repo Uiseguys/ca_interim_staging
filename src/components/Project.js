@@ -13,8 +13,7 @@ class Project extends React.Component {
   render () {
     return (
       <div className={`${styles.row2} ${styles[this.props.projNum]}`}>
-        <div className={`${styles.col21} ${styles.big}`}>{this.props.date1}<br />{this.props.date2}</div>
-        <div className={styles.col22}>
+
           <div className={`${styles.projTitle} ${styles.big}`} onClick={() => {
             setTimeout(()=>{
               this.props.recalculate();
@@ -23,14 +22,14 @@ class Project extends React.Component {
               return {showGallery: !prevState.showGallery}
             })
           }}>
-            <div className={styles[this.props.className]}>{this.props.title1}</div>
-            <div>{this.props.title2}</div>
-            <div>{this.props.title3}</div>
-          </div>
-          {
-            this.state.showGallery && this.props.hasPics ? <Gallery /> : null
-          }
+            <div className={`${styles[this.props.className]} ${styles.col22}`}>{this.props.title1}</div>
+            <div className={`${styles.col21} ${styles.big}`}>{this.props.date1}<br />{this.props.date2}</div>
+            <div className={styles.col22}>{this.props.title2}</div>
+            <div className={styles.col22}>{this.props.title3}</div>
         </div>
+        {
+          this.state.showGallery && this.props.hasPics ? <Gallery /> : null
+        }
       </div>
     )
   }

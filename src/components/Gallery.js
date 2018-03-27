@@ -12,16 +12,16 @@ class Gallery extends React.Component {
 
   render () {
     return (
-      <div className={styles.gallery}>
+      <div className={`${styles.gallery} ${styles.col22}`}>
         <div>
-          <div className={styles.firstpar}>
+          <div className={`${styles.firstpar} ${styles.caption}`}>
             Exhibition with works of Christian Awe<br />
             and the Georgian artist Levan<br />
             Songulashvilli
           </div>
-          <div>
-            68projects, Fasanenstr. 68, 10719 Berlin<br />
-            Opening: 16.03., 6 - 9 p.m.
+          <div className={styles.caption}>
+            {'68projects, Fasanenstr. 68, 10719 Berlin'}<br />
+            {'Opening: 16.03., 6 - 9 p.m.'}
           </div>
           <Artwork />
         </div>

@@ -120,7 +120,7 @@ input[type=text]::placeholder {
 	margin-top: 20px;
 }
 
-.gallery div > div {
+.gallery .caption {
 	padding: 0 7%;
 	text-align: left;
 }
@@ -262,7 +262,7 @@ input[type=text]::placeholder {
 }
 
 @media only screen and (min-width: 1024px) {
-	.gallery div > div {
+	.gallery .caption {
 		padding: 0;
 	}
 
@@ -278,7 +278,7 @@ input[type=text]::placeholder {
 }
 
 @media only screen and (min-width: 1025px) {
-	.gallery div > div {
+	.gallery .caption {
 		padding: 0;
 	}
 
@@ -394,7 +394,7 @@ input[type=text]::placeholder {
 	}
 
 	.row1 {
-		margin-top: 205px;
+		margin-top: 175px;
 		padding-left: 5%;
 	}
 
@@ -549,7 +549,7 @@ input[type=text]::placeholder {
 }
 
 @media only screen and (min-width: 1750px) {
-	.gallery div > div {
+	.gallery .caption {
 		padding: 0;
 	}
 
@@ -579,7 +579,7 @@ input[type=text]::placeholder {
 }
 
 @media only screen and (min-width: 1350px) {
-	.gallery div > div {
+	.gallery .caption {
 		padding: 0;
 	}
 
@@ -605,6 +605,20 @@ input[type=text]::placeholder {
 		right: 30px;
 		/* background: #fff; */
 		z-index: 4;
+	}
+
+	.landingHeader {
+		position: fixed;
+		z-index: 1;
+		text-align: center;
+		width: 100vw;
+		bottom: 0px;
+		height: 30px;
+		padding: 25px 0;
+	}
+
+	.sticky-one {
+		padding-top: 30px;
 	}
 }
 /* .gallery {
