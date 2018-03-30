@@ -22,9 +22,6 @@ body {
 	text-align: center;
 	width: 100%;
 	overflow-x: hidden;
-	/* margin-left: 70px;
-	margin-right: 70px;
-	margin-top: 150px; */
 }
 
 a {
@@ -68,14 +65,9 @@ input::-o-input-placeholder {
 }
 
 form {
-	/* padding-left: 0;
-	padding-right: 0; */
-	/* padding-top: 40px;
-	padding-bottom: 40px; */
 	padding: 40px;
 	width: 70%;
 	margin: 0 auto;
-	/* display: block; */
 }
 
 input[type=submit] {
@@ -90,7 +82,6 @@ input[type=submit] {
 	line-height: 70px;
 	font-size: 25px;
 	font-family: "Everyday", "Heebo";
-	/* vertical-align: middle; */
 }
 
 input[type=text] {
@@ -109,7 +100,6 @@ input[type=text] {
 input[type=text]::placeholder {
 	color: #000;
 	font-family: "Everyday", "Heebo";
-	/* font-size: 15px; */
 }
 
 .big {
@@ -212,9 +202,6 @@ input[type=text]::placeholder {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	/* height: 1015px;
-	width: 1920px; */
-  /* left: -205px; */
 }
 
 .underline {
@@ -224,7 +211,6 @@ input[type=text]::placeholder {
 
 .firstpar {
 	margin-bottom: 30px;
-	/* max-width: 410px; */
 }
 
 .websiteformdiv {
@@ -253,7 +239,6 @@ input[type=text]::placeholder {
 
 .col32 {
 	float: right;
-	/* text-align: right; */
 }
 
 .col43 {
@@ -504,8 +489,6 @@ input[type=text]::placeholder {
 
 	.StickyComp.absolute div {
 		position: absolute;
-		/* transition: transform ease-out 0.2s;
-		transform: translate(0, -90px); */
 	}
 
 	.row4 {
@@ -621,8 +604,6 @@ input[type=text]::placeholder {
 
 	.StickyComp.absolute div {
 		position: absolute;
-		/* transition: transform ease-out 0.2s;
-		transform: translate(0, -90px); */
 	}
 }
 
@@ -672,8 +653,6 @@ input[type=text]::placeholder {
 
 	.StickyComp.absolute div {
 		position: absolute;
-		/* transition: transform ease-out 0.2s;
-		transform: translate(0, -90px); */
 	}
 }
 
@@ -749,11 +728,6 @@ input[type=text]::placeholder {
 
 	a {
 		text-decoration: underline;
-		/* white-space: pre-wrap;
-		white-space: -moz-pre-wrap;
-		white-space: -pre-wrap;
-		white-space: -o-pre-wrap;
-		word-wrap: break-word; */
 	}
 
 	span.linebreak {
@@ -789,136 +763,3 @@ input[type=text]::placeholder {
 		display: none;
 	}
 }
-/* .gallery {
-	margin-top: 50px;
-} */
-
-/* .artwork {
-	margin-top: 50px;
-	mnargin-bottom: 120px;
-	height: 900px;
-	width: 70vw;
-} */
-
-/* .img, .row3 {
-	width: 700px;
-} */
-
-/* .contact {
-	margin-bottom: 155px;
-	margin-bottom: 200px;
-	text-align: left;
-} */
-
-/* .contactdetails {
-	text-align: left;
-	padding-left: 5%;
-	padding-right: 10%;
-	margin-bottom: 57px;
-} */
-
-/* .firstdetail {
-	margin-top: 70px;
-} */
-
-/* .imprintdetails {
-	margin-bottom: 35px;
-} */
-
-/* .row4 {
-	margin-top: 152px;
-}
-
-.row1 {
-	width: 1713px;
-	margin-top: 235px;
-	padding-left: 5%;
-}
-
-.col12 p {
-	max-width: 280px;
-}
-
-.col11 {
-	float: left;
-	width: 1313px;
-	margin-bottom: 167px;
-	/* text-align: left; */
-/* } */
-
-/* .col12 {
-	position: absolute;
-	right: 0;
-	width: 290px;
-	text-align: left;
-	margin-right: 10%;
-} */
-
-/* .col21 {
-	float: left;
-	min-width: 200px;
-	width: 20%;
-	margin-bottom: 167px;
-	text-align: left;
-} */
-
-/* .col22 {
-	float: right;
-	width: 80%;
-	text-align: left;
-} */
-
-/* .col31 {
-	float: left;
-	text-align: left;
-} */
-
-/* .col41, .col42, .col43 {
-	float: left;
-	text-align: left;
-	padding: 0 5% 5% 5%;
-	margin-right: 0;
-	margin-top: 80px;
-} */
-
-/* .col41 {
-	min-width: 200px;
-	width: 15%;
-}
-
-.col42 {
-	min-width: 200px;
-	width: 25%;
-} */
-
-/* .col43 {
-	padding-bottom: 100px;
-	min-width: 200px;
-	width: 25%;
-	margin-right: 0;
-} */
-
-/* Clear floats after the columns */
-/* .row1:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
-.row2:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
-.row3:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
-.row4:after {
-	content: "";
-	display: table;
-	clear: both;
-} */
