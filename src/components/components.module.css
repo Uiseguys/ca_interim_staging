@@ -708,6 +708,10 @@ input[type=text]::placeholder {
 	.whitespace {
 		display: none;
 	}
+
+	.mobilehidden {
+		display: none;
+	}
 }
 /* .gallery {
 	margin-top: 50px;

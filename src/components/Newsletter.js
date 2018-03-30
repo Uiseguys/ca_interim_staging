@@ -10,6 +10,14 @@ class Newsletter extends React.Component {
     };
     this.onSubmit = this.onSubmit.bind(this);
     this.onChange = this.onChange.bind(this);
+    this.toggleForm = this.toggleForm.bind(this);
+  }
+
+  toggleForm() {
+    const elementsToToggle = document.querySelectorAll('[data-toggle]');
+    [].forEach.call(elementsToToggle, (elem) => {
+      elem.classList.toggle('src-components----components-module---mobilehidden---1hed_');
+    });
   }
 
   onSubmit(e) {
@@ -48,22 +56,24 @@ class Newsletter extends React.Component {
         <div className={`${styles.desktoponly} ${styles.websiteformdiv}`}>
           <p className={styles.big}>
             <span className={styles.subscribeToggle}>
-              <span className={styles.clickable}>New website</span><span className={styles.whitespace}> </span><span className={styles.linebreak}><br /></span>on the way
+              <span onClick={this.toggleForm} className={styles.clickable}>New website</span><span className={styles.whitespace}> </span><span className={styles.linebreak}><br /></span>on the way
             </span>
-            <span className={styles.subscribeText}>
+            <span className={`${styles.subscribeText} ${styles.mobilehidden}`} data-toggle={true}>
               <span className={styles.comma}>, </span>be informed about Christians{"'"} works, exhibitions and projects
             </span>
           </p>
-          {
-            this.state.formVisible ?
-            <form action="https://loopback3-boilerplate.herokuapp.com/api/email/send" method="post" onSubmit={this.onSubmit}>
-            <input type="text" name="email" placeholder="your e-mail here" value={this.state.subscribeEmail} onChange={this.onChange} />
-            <input type="submit" value="ok" className={styles.standard}/>
-            </form> :
-            <div className={styles.thankyou}>
-            Thank you!
-            </div>
-          }
+          <div className={`${styles.mobilehidden}`} data-toggle={true}>
+            {
+              this.state.formVisible ?
+              <form action="https://loopback3-boilerplate.herokuapp.com/api/email/send" method="post" onSubmit={this.onSubmit}>
+              <input type="text" name="email" placeholder="your e-mail here" value={this.state.subscribeEmail} onChange={this.onChange} />
+              <input type="submit" value="ok" className={styles.standard}/>
+              </form> :
+              <div className={styles.thankyou}>
+              Thank you!
+              </div>
+            }
+          </div>
         </div>
       </div>
     )
