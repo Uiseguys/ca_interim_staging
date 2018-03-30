@@ -31,9 +31,10 @@ class Exhibits extends React.Component {
     const firstStickyPos = document.querySelectorAll('[data-sticky] div')[0].getBoundingClientRect().top;
     const secondStickyPos = document.querySelectorAll('[data-sticky] div')[1].getBoundingClientRect().top + document.documentElement.scrollTop;
     const thirdStickyPos = document.querySelectorAll('[data-sticky] div')[2].getBoundingClientRect().top + document.documentElement.scrollTop;
-    const headerHeight = document.querySelectorAll('[data-sticky] div')[1].clientHeight;
+    // const headerHeight = document.querySelectorAll('[data-sticky] div')[1].clientHeight;
     this.setState({exit1entry2: (secondStickyPos - firstStickyPos).toString()});
-    this.setState({exit2entry3: (thirdStickyPos - firstStickyPos - headerHeight).toString()});
+    this.setState({exit2entry3: (thirdStickyPos - firstStickyPos).toString()});
+    // this.setState({exit2entry3: (thirdStickyPos - firstStickyPos - headerHeight).toString()});
   }
 
   render () {

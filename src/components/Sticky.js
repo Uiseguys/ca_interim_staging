@@ -27,9 +27,6 @@ export class Sticky extends React.Component {
           }
           sticky.classList.add('src-components----components-module---sticky---2kzpb');
         } else {
-          if (i > 0) {
-            arr[i-1].classList.remove('src-components----components-module---absolute---2Sk1q');
-          }
           sticky.classList.remove('src-components----components-module---sticky---2kzpb');
         }
       });

@@ -467,7 +467,6 @@ input[type=text]::placeholder {
 	.landingHeader {
 		position: fixed;
 		text-align: center;
-		background: #fff;
 		width: 100vw;
 		top: 60px;
 	}
@@ -482,9 +481,14 @@ input[type=text]::placeholder {
 		z-index: 1;
 	}
 
-	.sticky-two div, .sticky-three div { z-index: 2; background: #fff; }
+	.sticky-two div, .sticky-three div { z-index: 2; }
 
 	.sticky div {
+		position: fixed;
+		top: 60px;
+	}
+
+	.StickyComp.absolute.sticky div {
 		position: fixed;
 		top: 60px;
 	}
@@ -501,8 +505,7 @@ input[type=text]::placeholder {
 	.StickyComp.absolute div {
 		position: absolute;
 		/* transition: transform ease-out 0.2s;
-		transform: translate(0, -90px);
-		background: #fff; */
+		transform: translate(0, -90px); */
 	}
 
 	.row4 {
@@ -584,6 +587,43 @@ input[type=text]::placeholder {
 	.col12 p {
 		max-width: 380px;
 	}
+
+	.sticky-one, .sticky-two, .sticky-three {
+		padding-left: 5%;
+	}
+
+	.sticky-one div {
+		position: fixed;
+		top: 60px;
+		z-index: 1;
+	}
+
+	.sticky-two div, .sticky-three div { z-index: 2; }
+
+	.sticky div {
+		position: fixed;
+		top: 60px;
+	}
+
+	.StickyComp.absolute.sticky div {
+		position: fixed;
+		top: 60px;
+	}
+
+	.StickyComp div {
+		width: 30%;
+		text-align: left;
+	}
+
+	.StickyComp {
+		height: 30px;
+	}
+
+	.StickyComp.absolute div {
+		position: absolute;
+		/* transition: transform ease-out 0.2s;
+		transform: translate(0, -90px); */
+	}
 }
 
 @media only screen and (min-width: 1350px) {
@@ -598,6 +638,43 @@ input[type=text]::placeholder {
 	.col12 {
 		margin-right: 10%;
 	}
+
+	.sticky-one, .sticky-two, .sticky-three {
+		padding-left: 5%;
+	}
+
+	.sticky-one div {
+		position: fixed;
+		top: 60px;
+		z-index: 1;
+	}
+
+	.sticky-two div, .sticky-three div { z-index: 2; }
+
+	.sticky div {
+		position: fixed;
+		top: 60px;
+	}
+
+	.StickyComp.absolute.sticky div {
+		position: fixed;
+		top: 60px;
+	}
+
+	.StickyComp div {
+		width: 30%;
+		text-align: left;
+	}
+
+	.StickyComp {
+		height: 30px;
+	}
+
+	.StickyComp.absolute div {
+		position: absolute;
+		/* transition: transform ease-out 0.2s;
+		transform: translate(0, -90px); */
+	}
 }
 
 @media only screen and (max-width: 1024px) {
@@ -611,7 +688,6 @@ input[type=text]::placeholder {
 		position: fixed;
 		bottom: 60px;
 		right: 30px;
-		/* background: #fff; */
 		z-index: 4;
 	}
 
