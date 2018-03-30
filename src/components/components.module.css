@@ -35,6 +35,10 @@ span.linebreak {
 	display: none;
 }
 
+span.comma {
+	display: inline;
+}
+
 input::-webkit-input-placeholder {
 	font-family: "Everyday", "Heebo";
 	color: black;
@@ -678,6 +682,31 @@ input[type=text]::placeholder {
 
 	span.linebreak {
 		display: inline;
+	}
+
+	span.comma  {
+		display: none;
+	}
+
+	.subscribeToggle {
+		display: block;
+		margin-bottom: 20px;
+		font-size: 38px;
+	}
+
+	.subscribeText {
+		display: block;
+		max-width: 260px;
+		margin: 0 auto;
+		font-size: 25px;
+	}
+
+	.clickable {
+		text-decoration: underline;
+	}
+
+	.whitespace {
+		display: none;
 	}
 }
 /* .gallery {

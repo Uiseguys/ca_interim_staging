@@ -47,7 +47,12 @@ class Newsletter extends React.Component {
       <div className={styles.col12}>
         <div className={`${styles.desktoponly} ${styles.websiteformdiv}`}>
           <p className={styles.big}>
-            {"New website on the way, be informed about Christians' works, exhibitions and projects"}
+            <span className={styles.subscribeToggle}>
+              <span className={styles.clickable}>New website</span><span className={styles.whitespace}> </span><span className={styles.linebreak}><br /></span>on the way
+            </span>
+            <span className={styles.subscribeText}>
+              <span className={styles.comma}>, </span>be informed about Christians{"'"} works, exhibitions and projects
+            </span>
           </p>
           {
             this.state.formVisible ?
