@@ -31,6 +31,10 @@ a {
 	color: black;
 }
 
+span.linebreak {
+	display: none;
+}
+
 input::-webkit-input-placeholder {
 	font-family: "Everyday", "Heebo";
 	color: black;
@@ -663,14 +667,17 @@ input[type=text]::placeholder {
 		margin-bottom: 50px;
 	}
 
-	/* this for now */
 	a {
-		white-space: pre-wrap;      /* CSS3 */
-		white-space: -moz-pre-wrap; /* Firefox */
-		white-space: -pre-wrap;     /* Opera <7 */
-		white-space: -o-pre-wrap;   /* Opera 7 */
-		word-wrap: break-word;      /* IE */
 		text-decoration: underline;
+		/* white-space: pre-wrap;
+		white-space: -moz-pre-wrap;
+		white-space: -pre-wrap;
+		white-space: -o-pre-wrap;
+		word-wrap: break-word; */
+	}
+
+	span.linebreak {
+		display: inline;
 	}
 }
 /* .gallery {

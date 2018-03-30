@@ -11,12 +11,12 @@ class ContactDetails extends React.Component {
     		</div>
     		<div className={styles.contactdetails}>office +49 30 84 41 99 40
     			<br /><a href="mailto:info@christianawe.com">
-    				info@christianawe.com
+    				info@<span className={styles.linebreak}><br /></span>christianawe.com
     			</a>
     		</div>
     		<div className={styles.contactdetails}>press inquiries:
     			<br /><a href="mailto:presse@christianawe.com">
-    				presse@christianawe.com
+    				presse@<span className={styles.linebreak}><br /></span>christianawe.com
     			</a>
     		</div>
     		<div className={`${styles.contactdetails} ${styles.alignleft}`}>Galleries:
