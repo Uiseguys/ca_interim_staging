@@ -11,12 +11,20 @@ class Exhibits extends React.Component {
     this.state = {
       exit1entry2: 0,
       exit2entry3: 0,
+      arrowShown: document.documentElement.scrollTop > 1000 ? true : false
     }
     this.recalculateEntryAndExit = this.recalculateEntryAndExit.bind(this);
   }
 
   componentDidMount() {
     this.recalculateEntryAndExit();
+    document.addEventListener('scroll', () => {
+      if (document.documentElement.scrollTop > 1000) {
+        this.setState({arrowShown: true});
+      } else {
+        this.setState({arrowShown: false});
+      }
+    });
   }
 
   recalculateEntryAndExit() {
@@ -43,9 +51,13 @@ class Exhibits extends React.Component {
           <div>imprint</div>
         </Sticky>
         <Imprint />
-        <div className={`${styles.arrow} ${styles.big}`}>
+        {
+          this.state.arrowShown ?
+          <div className={`${styles.arrow} ${styles.big}`}>
           &#8593;
-        </div>
+          </div> :
+          null
+        }
       </div>
     )
   }
