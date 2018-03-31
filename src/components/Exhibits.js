@@ -11,6 +11,9 @@ class Exhibits extends React.Component {
     this.state = {
       exit1entry2: 0,
       exit2entry3: 0,
+      initial1: 0,
+      initial2: 0,
+      initial3: 0,
       arrowShown: document.documentElement.scrollTop > 1000 ? true : false
     }
     this.recalculateEntryAndExit = this.recalculateEntryAndExit.bind(this);
@@ -28,27 +31,34 @@ class Exhibits extends React.Component {
   }
 
   recalculateEntryAndExit() {
+    document.querySelectorAll('[data-sticky] div')[1].style.top = '';
     const firstStickyPos = document.querySelectorAll('[data-sticky] div')[0].getBoundingClientRect().top;
     const secondStickyPos = document.querySelectorAll('[data-sticky] div')[1].getBoundingClientRect().top + document.documentElement.scrollTop;
     const thirdStickyPos = document.querySelectorAll('[data-sticky] div')[2].getBoundingClientRect().top + document.documentElement.scrollTop;
     // const headerHeight = document.querySelectorAll('[data-sticky] div')[1].clientHeight;
-    this.setState({exit1entry2: (secondStickyPos - firstStickyPos).toString()});
-    this.setState({exit2entry3: (thirdStickyPos - firstStickyPos).toString()});
+
+    this.setState({
+      exit1entry2: (secondStickyPos - firstStickyPos).toString(),
+      exit2entry3: (thirdStickyPos - firstStickyPos).toString(),
+      initial1: firstStickyPos.toString(),
+      initial2: secondStickyPos.toString(),
+      initial3: thirdStickyPos.toString(),
+    });
     // this.setState({exit2entry3: (thirdStickyPos - firstStickyPos - headerHeight).toString()});
   }
 
   render () {
     return (
-      <div>
-        <Sticky className='sticky-one' exit={this.state.exit1entry2}>
+      <div style={{position:'relative'}}>
+        <Sticky className='sticky-one' initial={this.state.initial1} exit={this.state.exit1entry2}>
           <div>currently working on</div>
         </Sticky>
         <CurrentlyWorking recalculate={this.recalculateEntryAndExit}/>
-        <Sticky className='sticky-two' enter={this.state.exit1entry2} exit={this.state.exit2entry3}>
+        <Sticky className='sticky-two' initial={this.state.initial2} enter={this.state.exit1entry2} exit={this.state.exit2entry3}>
           <div>get in touch</div>
         </Sticky>
         <ContactDetails />
-        <Sticky className='sticky-three' enter={this.state.exit2entry3}>
+        <Sticky className='sticky-three' initial={this.state.initial3} enter={this.state.exit2entry3}>
           <div>imprint</div>
         </Sticky>
         <Imprint />

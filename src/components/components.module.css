@@ -470,12 +470,12 @@ input[type=text]::placeholder {
 
 	.sticky div {
 		position: fixed;
-		top: 60px;
+		top: 60px !important;
 	}
 
 	.StickyComp.absolute.sticky div {
 		position: fixed;
-		top: 60px;
+		top: 60px !important;
 	}
 
 	.StickyComp div {
@@ -585,12 +585,12 @@ input[type=text]::placeholder {
 
 	.sticky div {
 		position: fixed;
-		top: 60px;
+		top: 60px !important;
 	}
 
 	.StickyComp.absolute.sticky div {
 		position: fixed;
-		top: 60px;
+		top: 60px !important;
 	}
 
 	.StickyComp div {
@@ -634,12 +634,12 @@ input[type=text]::placeholder {
 
 	.sticky div {
 		position: fixed;
-		top: 60px;
+		top: 60px !important;
 	}
 
 	.StickyComp.absolute.sticky div {
 		position: fixed;
-		top: 60px;
+		top: 60px !important;
 	}
 
 	.StickyComp div {
