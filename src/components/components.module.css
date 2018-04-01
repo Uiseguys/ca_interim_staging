@@ -279,10 +279,6 @@ input[type=text]::placeholder {
 		margin-top: 0;
 	}
 
-	.websiteformdiv {
-		margin-top: 0;
-	}
-
 	.small {
 		font-size: 13px;
 	}
@@ -555,10 +551,6 @@ input[type=text]::placeholder {
 @media only screen and (min-width: 1750px) {
 	.gallery .caption {
 		padding: 0;
-	}
-
-	.websiteformdiv {
-		margin-top: 0;
 	}
 
 	.websiteformdiv {

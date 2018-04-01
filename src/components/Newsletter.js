@@ -66,7 +66,7 @@ class Newsletter extends React.Component {
             {
               this.state.formVisible ?
               <form action="https://loopback3-boilerplate.herokuapp.com/api/email/send" method="post" onSubmit={this.onSubmit}>
-              <input type="text" name="email" placeholder="your e-mail here" value={this.state.subscribeEmail} onChange={this.onChange} />
+              <input type="text" name="email" placeholder="your e-mail address here" value={this.state.subscribeEmail} onChange={this.onChange} />
               <input type="submit" value="ok" className={styles.standard}/>
               </form> :
               <div className={styles.thankyou}>
