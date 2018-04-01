@@ -21,28 +21,21 @@
 	<div class="overlap sectionHeader firstheader fixed"><span>currently working on</span></div>
 	<div class=row1>
 		<div class="column12">
-			<div class="desktoponly">
-				<p class="big">New website on the way, be informed about Christians' works, exhibitions and projects</p>
-				<form action="" id="subscribeForm1" method="post">
-					<input type=text id="subscribeEmail1" name="email" placeholder="your e-mail address here"/>
-					<input type=submit value=ok class=standard/>
-				</form>
-				<div id="thankyou1" style="display: none">
-					Thank you!
-				</div>
-			</div>
-			<div class="websiteformdiv mobileonly">
-				<div id=newwebsite class="big">
-					<div class="underline websiteword">New website</div>
-					<div class="">on the way</div>
-				</div>
-				<div class="emailform standard hidden">
-					<p class="">be informed about Christians' works, exhibitions and projects</p>
-					<form action="" id="subscribeForm2" method="post">
-						<input type=text id="subscribeEmail2" name="email" placeholder="your e-mail address here"/>
-						<input type=submit value=ok class=standard/>
+			<div class="websiteformdiv">
+				<p class="big">
+					<span class="subscribeToggle">
+						<span class="clickable">New website</span><span class="whitespace"> </span><span class="linebreak"><br /></span>on the way
+					</span>
+					<span class="subscribeText mobilehidden">
+						<span class="comma">, </span>be informed about Christians' works, exhibitions and projects
+					</span>
+				</p>
+				<div class="mobilehidden">
+					<form action="" id="subscribeForm1" method="post">
+						<input type=text id="subscribeEmail1" name="email" placeholder="your e-mail address here"/>
+						<input type="submit" value="ok" class=standard/>
 					</form>
-					<div id="thankyou2" style="display: none">
+					<div id="thankyou1" style="display: none">
 						Thank you!
 					</div>
 				</div>

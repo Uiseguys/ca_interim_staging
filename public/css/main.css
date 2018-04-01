@@ -311,8 +311,8 @@ input[type=text]::placeholder {
 	display: none;
 }
 
-.whitespace {
-	display: inline;
+.websiteformdiv {
+	margin-top: 0;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -724,6 +724,10 @@ input[type=text]::placeholder {
 		display: none;
 	}
 
+	.comma {
+		display: none;
+	}
+
 	.contactoffice {
 		margin-bottom: 0;
 	}
@@ -769,5 +773,35 @@ input[type=text]::placeholder {
 		-webkit-order: 1;
 		order: 1;
 		margin-bottom: 0;
+	}
+
+	.websiteformdiv {
+		margin-top: 65px;
+		margin-bottom: 70px;
+	}
+
+	.subscribeToggle {
+		display: block;
+		margin-bottom: 20px;
+		font-size: 38px;
+	}
+
+	.clickable {
+		text-decoration: underline;
+	}
+
+	.subscribeText {
+		display: block;
+		max-width: 260px;
+		margin: 0 auto;
+		font-size: 25px;
+	}
+
+	.mobilehidden {
+		display: none;
+	}
+
+	.mobilehidden.show {
+		display: block;
 	}
 }

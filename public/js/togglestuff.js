@@ -4,6 +4,10 @@ $(function(){
        $(".art1").toggleClass("active");
    });
 
+   $(".clickable").click(function(){
+       $(".mobilehidden").toggleClass("show");
+   });
+
    $("#newwebsite").click(function(){
        $(".emailform").toggleClass("hidden");
    });
