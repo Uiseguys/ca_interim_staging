@@ -456,41 +456,6 @@ input[type=text]::placeholder {
 		top: 60px;
 	}
 
-	.sticky-one, .sticky-two, .sticky-three {
-		padding-left: 5%;
-	}
-
-	.sticky-one div {
-		position: fixed;
-		top: 60px;
-		z-index: 1;
-	}
-
-	.sticky-two div, .sticky-three div { z-index: 2; }
-
-	.sticky div {
-		position: fixed;
-		top: 60px !important;
-	}
-
-	.StickyComp.absolute.sticky div {
-		position: fixed;
-		top: 60px !important;
-	}
-
-	.StickyComp div {
-		width: 30%;
-		text-align: left;
-	}
-
-	.StickyComp {
-		height: 30px;
-	}
-
-	.StickyComp.absolute div {
-		position: absolute;
-	}
-
 	.row4 {
 		margin-top: 122px;
 	}
@@ -540,6 +505,51 @@ input[type=text]::placeholder {
 	a:hover {
 		text-decoration: underline;
 	}
+
+	.sticky-one, .sticky-two, .sticky-three {
+		padding-left: 5%;
+	}
+
+	.sticky-one div {
+		position: fixed;
+		top: 60px;
+		z-index: 1;
+	}
+
+	.sticky-two div, .sticky-three div { z-index: 2; }
+
+	.sticky div {
+		position: fixed;
+		top: 60px;
+	}
+
+	.StickyComp.absolute.sticky div, .StickyComp.absolute.sticky-one div {
+		position: absolute;
+		top: 60px;
+	}
+
+	.StickyComp div {
+		width: 30%;
+		text-align: left;
+	}
+
+	.StickyComp {
+		height: 30px;
+	}
+
+	.StickyComp span {
+		display: block;
+		transform: translate(0, 30px);
+		transition: transform ease-out 0.2s;
+	}
+
+	.StickyComp.sticky-one span {
+		transform: translate(0, 0);
+	}
+
+	.StickyComp.sticky span {
+		transform: translate(0, 0);
+	}
 }
 
 @media only screen and (min-width: 1750px) {
@@ -570,41 +580,6 @@ input[type=text]::placeholder {
 	.col12 p {
 		max-width: 380px;
 	}
-
-	.sticky-one, .sticky-two, .sticky-three {
-		padding-left: 5%;
-	}
-
-	.sticky-one div {
-		position: fixed;
-		top: 60px;
-		z-index: 1;
-	}
-
-	.sticky-two div, .sticky-three div { z-index: 2; }
-
-	.sticky div {
-		position: fixed;
-		top: 60px !important;
-	}
-
-	.StickyComp.absolute.sticky div {
-		position: fixed;
-		top: 60px !important;
-	}
-
-	.StickyComp div {
-		width: 30%;
-		text-align: left;
-	}
-
-	.StickyComp {
-		height: 30px;
-	}
-
-	.StickyComp.absolute div {
-		position: absolute;
-	}
 }
 
 @media only screen and (min-width: 1350px) {
@@ -618,41 +593,6 @@ input[type=text]::placeholder {
 
 	.col12 {
 		margin-right: 10%;
-	}
-
-	.sticky-one, .sticky-two, .sticky-three {
-		padding-left: 5%;
-	}
-
-	.sticky-one div {
-		position: fixed;
-		top: 60px;
-		z-index: 1;
-	}
-
-	.sticky-two div, .sticky-three div { z-index: 2; }
-
-	.sticky div {
-		position: fixed;
-		top: 60px !important;
-	}
-
-	.StickyComp.absolute.sticky div {
-		position: fixed;
-		top: 60px !important;
-	}
-
-	.StickyComp div {
-		width: 30%;
-		text-align: left;
-	}
-
-	.StickyComp {
-		height: 30px;
-	}
-
-	.StickyComp.absolute div {
-		position: absolute;
 	}
 }
 

@@ -18,25 +18,21 @@ export class Sticky extends React.Component {
 
       [].forEach.call(stickies, (sticky, i, arr) => {
         const stickyInitial = parseInt(sticky.getAttribute('data-sticky-initial'), 10);
+        const nextStickyInitial = arr[i+1] ? parseInt(arr[i+1].getAttribute('data-sticky-initial'), 10) : null;
         const stickyEnter = parseInt(sticky.getAttribute('data-sticky-enter'), 10) || stickyInitial;
         const stickyExit = parseInt(sticky.getAttribute('data-sticky-exit'), 10) || bottom;
 
-        if (top >= stickyEnter && top <= stickyExit) {
-          if (i > 0) {
-            arr[i-1].classList.add('src-components----components-module---absolute---2Sk1q');
-            arr[i-1].querySelector('div').style.top = `${stickyInitial}px`;
-          }
+        if (stickyInitial <= document.documentElement.scrollTop + 60) {
           sticky.classList.add('src-components----components-module---sticky---2kzpb');
+          if (arr[i+1] && sticky.querySelector('div').getBoundingClientRect().top + document.documentElement.scrollTop >= nextStickyInitial-30) {
+            sticky.classList.add('src-components----components-module---absolute---2Sk1q');
+            sticky.querySelector('div').style.top = `${nextStickyInitial}px`;
+          }
         } else {
-          let nextStickyPos;
-          if (i === 0) {
-            nextStickyPos = arr[i + 1].querySelector('div').getBoundingClientRect().top;
-          }
-          if (i !== 0 || (i === 0 && document.documentElement.scrollTop > (nextStickyPos - 30))) {
-            sticky.classList.remove('src-components----components-module---sticky---2kzpb');
-          }
-          if (document.documentElement.scrollTop < (stickyInitial - 30) && i === 1) {
-            sticky.querySelector('div').style.top = `${stickyInitial}px`;
+          sticky.classList.remove('src-components----components-module---sticky---2kzpb');
+          if (arr[i-1] && document.documentElement.scrollTop <= stickyInitial) {
+            arr[i-1].classList.remove('src-components----components-module---absolute---2Sk1q');
+            arr[i-1].querySelector('div').style.top = '';
           }
         }
       });
@@ -57,10 +53,3 @@ export class Sticky extends React.Component {
     </div>);
   }
 }
-
-// Sticky.propTypes = {
-//   className: React.PropTypes.string,
-//   enter: React.PropTypes.string,
-//   exit: React.PropTypes.string,
-//   children: React.PropTypes.node,
-// };

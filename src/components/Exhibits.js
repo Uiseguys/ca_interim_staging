@@ -54,22 +54,21 @@ class Exhibits extends React.Component {
       initial2: secondStickyPos.toString(),
       initial3: thirdStickyPos.toString(),
     });
-    // this.setState({exit2entry3: (thirdStickyPos - firstStickyPos - headerHeight).toString()});
   }
 
   render () {
     return (
       <div style={{position:'relative'}}>
         <Sticky className='sticky-one' initial={this.state.initial1} exit={this.state.exit1entry2}>
-          <div>currently working on</div>
+          <div><span>currently working on</span></div>
         </Sticky>
         <CurrentlyWorking recalculate={this.recalculateEntryAndExit}/>
         <Sticky className='sticky-two' initial={this.state.initial2} enter={this.state.exit1entry2} exit={this.state.exit2entry3}>
-          <div>get in touch</div>
+          <div><span>get in touch</span></div>
         </Sticky>
         <ContactDetails />
         <Sticky className='sticky-three' initial={this.state.initial3} enter={this.state.exit2entry3}>
-          <div>imprint</div>
+          <div><span>imprint</span></div>
         </Sticky>
         <Imprint />
         {
