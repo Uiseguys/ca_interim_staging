@@ -3,7 +3,7 @@ import Landing from './Landing.js'
 import Exhibits from './Exhibits.js'
 import styles from './components.module.css'
 
-class MyComponent extends React.Component {
+class Overall extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
@@ -30,4 +30,4 @@ class MyComponent extends React.Component {
   }
 }
 
-export default MyComponent
+export default Overall

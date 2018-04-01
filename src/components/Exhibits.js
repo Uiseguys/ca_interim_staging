@@ -4,7 +4,7 @@ import CurrentlyWorking from './CurrentlyWorking.js';
 import ContactDetails from './ContactDetails.js';
 import Imprint from './Imprint.js';
 import styles from './components.module.css';
-import { Sticky } from './Sticky.js';
+import Sticky from './Sticky.js';
 
 class Exhibits extends React.Component {
   constructor(props) {

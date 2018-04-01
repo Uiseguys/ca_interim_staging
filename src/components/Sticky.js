@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './components.module.css';
 
-export class Sticky extends React.Component {
+class Sticky extends React.Component {
   componentDidMount() {
 
     const stickies = document.querySelectorAll('[data-sticky]');
@@ -42,3 +42,5 @@ export class Sticky extends React.Component {
     </div>);
   }
 }
+
+export default Sticky

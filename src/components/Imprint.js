@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from "./components.module.css"
 
-class ContactDetails extends React.Component {
+class Imprint extends React.Component {
   render () {
     return (
       <div className={`${styles.row4} ${styles.small}`}>
@@ -98,4 +98,4 @@ class ContactDetails extends React.Component {
   }
 }
 
-export default ContactDetails
+export default Imprint
