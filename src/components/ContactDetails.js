@@ -5,11 +5,23 @@ class ContactDetails extends React.Component {
   render () {
     return (
       <div className={`${styles.contact} ${styles.big}`}>
-        <div className={`${styles.contactdetails} ${styles.firstdetail}`}>Atelier Christian Awe
+        <div className={`${styles.contactdetails} ${styles.firstdetail}`}>
+          Atelier
+          <span className={styles.whitespace}> </span>
+          <span className={styles.linebreak}><br /></span>
+          Christian Awe
     			<br />Siegfriedstr. 204a
-    			<br />10365 Berlin, Germany
+    			<br />
+          10365 Berlin,
+          <span className={styles.whitespace}> </span>
+          <span className={styles.linebreak}><br /></span>
+          Germany
     		</div>
-    		<div className={styles.contactdetails}>office +49 30 84 41 99 40
+    		<div className={styles.contactdetails}>
+        office
+        <span className={styles.whitespace}> </span>
+        <span className={styles.linebreak}><br /></span>
+        +49 30 84 41 99 40
     			<br /><a href="mailto:info@christianawe.com">
     				info@<span className={styles.linebreak}><br /></span>christianawe.com
     			</a>

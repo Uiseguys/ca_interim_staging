@@ -23,9 +23,18 @@ class Project extends React.Component {
             })
           }}>
             <div className={`${styles[this.props.className]} ${styles.col22}`}>{this.props.title1}</div>
+            {
+              this.props.title2 ?
+              <div className={styles.col22}>{this.props.title2}</div> :
+              null
+            }
             <div className={`${styles.col21} ${styles.big}`}>{this.props.date1}<br />{this.props.date2}</div>
-            <div className={styles.col22}>{this.props.title2}</div>
             <div className={styles.col22}>{this.props.title3}</div>
+            {
+              this.props.title4 ?
+              <div className={styles.col22}>{this.props.title4}</div> :
+              null
+            }
         </div>
         {
           this.state.showGallery && this.props.hasPics ? <Gallery /> : null

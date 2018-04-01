@@ -694,4 +694,8 @@ input[type=text]::placeholder {
 	.mobilehidden {
 		display: none;
 	}
+
+	.contactdetails.firstdetail {
+		margin-bottom: 0;
+	}
 }
