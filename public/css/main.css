@@ -130,6 +130,10 @@ input[type=text]::placeholder {
 	text-align: left;
 }
 
+.contactoffice.align-left {
+	text-align: left;
+}
+
 .art1, .art2, .art3 {
 	margin-top: 20px;
 	margin-bottom: 80px;
@@ -267,6 +271,12 @@ input[type=text]::placeholder {
 	padding-right: 10%;
 }
 
+.contactoffice {
+	margin-bottom: 55px;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
 .column41, .column42, .column43 {
 	margin-top: 80px;
 }
@@ -295,6 +305,14 @@ input[type=text]::placeholder {
 
 .col1, .col2, .col3 {
 	padding: 0 5% 5% 5%;
+}
+
+.linebreak {
+	display: none;
+}
+
+.whitespace {
+	display: inline;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -430,6 +448,10 @@ input[type=text]::placeholder {
 		margin-bottom: 57px;
 	}
 
+	.contactoffice {
+		margin-bottom: 57px;
+	}
+
 	.row1 {
 		margin-top: 205px;
 		padding-left: 5%;
@@ -520,6 +542,11 @@ input[type=text]::placeholder {
 	}
 
 	.contactdetails {
+		text-align: left;
+		padding-left: 5%;
+	}
+
+	.contactoffice {
 		text-align: left;
 		padding-left: 5%;
 	}
@@ -618,6 +645,10 @@ input[type=text]::placeholder {
 	.contactdetails a {
 		text-decoration: none;
 	}
+
+	.contactoffice a {
+		text-decoration: none;
+	}
 	/*
 	.underline {
 		text-decoration: none;
@@ -683,5 +714,60 @@ input[type=text]::placeholder {
 	.titleHeader.intro {
 		background-color: transparent;
 		color: #fff;
+	}
+
+	.linebreak {
+		display: inline;
+	}
+
+	.whitespace {
+		display: none;
+	}
+
+	.contactoffice {
+		margin-bottom: 0;
+	}
+
+	.gallery {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-moz-box-orient: vertical;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		/* optional */
+		-webkit-box-align: start;
+		-moz-box-align: start;
+		-ms-flex-align: start;
+		-webkit-align-items: flex-start;
+		align-items: flex-start;
+	}
+
+	.wholecaption {
+		-webkit-box-ordinal-group: 2;
+		-moz-box-ordinal-group: 2;
+		-ms-flex-order: 2;
+		-webkit-order: 2;
+		order: 2;
+		width: 85%;
+		margin: 0 auto;
+	}
+
+	.wholecaption > div {
+		padding: 0;
+		text-align: left;
+	}
+
+	.images {
+		-webkit-box-ordinal-group: 1;
+		-moz-box-ordinal-group: 1;
+		-ms-flex-order: 1;
+		-webkit-order: 1;
+		order: 1;
+		margin-bottom: 50px;
 	}
 }
