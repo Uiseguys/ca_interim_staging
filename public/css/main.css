@@ -187,10 +187,6 @@ input[type=text]::placeholder {
 
 /* mobile styles */
 
-.desktoponly {
-	display: none;
-}
-
 .introBackground {
 	background-image: url("/images/splashscreen_bg_mobile.jpg");
 	background-size: 130%;
@@ -217,10 +213,6 @@ input[type=text]::placeholder {
 .underline {
 	text-decoration: underline;
 	cursor: pointer;
-}
-
-.desktoponly {
-	display: none;
 }
 
 .firstpar {
@@ -631,10 +623,6 @@ input[type=text]::placeholder {
 
 	.mobileonly {
 		display: none;
-	}
-
-	.desktoponly {
-		display: inherit;
 	}
 
 	.firstpar {
