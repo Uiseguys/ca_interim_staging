@@ -53,7 +53,7 @@ class Newsletter extends React.Component {
   render () {
     return (
       <div className={styles.col12}>
-        <div className={`${styles.desktoponly} ${styles.websiteformdiv}`}>
+        <div className={`${styles.websiteformdiv}`}>
           <p className={styles.big}>
             <span className={styles.subscribeToggle}>
               <span onClick={this.toggleForm} className={styles.clickable}>New website</span><span className={styles.whitespace}> </span><span className={styles.linebreak}><br /></span>on the way
