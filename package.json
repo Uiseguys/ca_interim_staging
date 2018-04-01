@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@ui-guys/stencil-bs-ui-lib": "^0.3.47",
+    "animated-scroll-to": "^1.1.10",
     "cpx": "^1.5.0",
     "gatsby": "^1.9.231",
     "gatsby-link": "^1.6.39",

@@ -1,4 +1,5 @@
 import React from 'react';
+import animateScrollTo from 'animated-scroll-to';
 import CurrentlyWorking from './CurrentlyWorking.js';
 import ContactDetails from './ContactDetails.js';
 import Imprint from './Imprint.js';
@@ -17,6 +18,7 @@ class Exhibits extends React.Component {
       arrowShown: document.documentElement.scrollTop > 1000 ? true : false
     }
     this.recalculateEntryAndExit = this.recalculateEntryAndExit.bind(this);
+    this.scrollToTop = this.scrollToTop.bind(this);
   }
 
   componentDidMount() {
@@ -28,6 +30,14 @@ class Exhibits extends React.Component {
         this.setState({arrowShown: false});
       }
     });
+  }
+
+  scrollToTop() {
+    animateScrollTo(0, {
+      speed: 40,
+      element: window,
+      cancelOnUserAction: true,
+    })
   }
 
   recalculateEntryAndExit() {
@@ -64,7 +74,7 @@ class Exhibits extends React.Component {
         <Imprint />
         {
           this.state.arrowShown ?
-          <div className={`${styles.arrow} ${styles.big}`}>
+          <div onClick={this.scrollToTop} className={`${styles.arrow} ${styles.big}`}>
           &#8593;
           </div> :
           null
