@@ -46,43 +46,44 @@ var stickyHeaders = (function() {
     }
 
     var _whenScrolling = function() {
+        if ($window.width() > 1023) {
+          $stickies.each(function(i) {
 
-        $stickies.each(function(i) {
+              var $thisSticky = $(this),
+                  $stickyPosition = $thisSticky.data('originalPosition');
 
-            var $thisSticky = $(this),
-                $stickyPosition = $thisSticky.data('originalPosition');
+              if ($stickyPosition <= $window.scrollTop() + 100) {
 
-            if ($stickyPosition <= $window.scrollTop() + 100) {
+                  var $nextSticky = $stickies.eq(i + 1),
+                      $nextStickyPosition = $nextSticky.data('originalPosition') - $thisSticky.data('originalHeight');
 
-                var $nextSticky = $stickies.eq(i + 1),
-                    $nextStickyPosition = $nextSticky.data('originalPosition') - $thisSticky.data('originalHeight');
+                  $thisSticky.addClass("fixed");
 
-                $thisSticky.addClass("fixed");
+                  if ($nextSticky.length > 0 && $thisSticky.offset().top >= ($nextStickyPosition)) {
 
-                if ($nextSticky.length > 0 && $thisSticky.offset().top >= ($nextStickyPosition)) {
+                      $thisSticky.addClass("absolute").css("top", $nextStickyPosition);
+                  }
 
-                    $thisSticky.addClass("absolute").css("top", $nextStickyPosition);
-                }
+              } else {
 
-            } else {
+                  var $prevSticky = $stickies.eq(i - 1);
 
-                var $prevSticky = $stickies.eq(i - 1);
+                  $thisSticky.removeClass("fixed");
 
-                $thisSticky.removeClass("fixed");
+                  if ($prevSticky.length > 0 && $window.scrollTop() <= $thisSticky.data('originalPosition') - $thisSticky.data('originalHeight') + 140) {
 
-                if ($prevSticky.length > 0 && $window.scrollTop() <= $thisSticky.data('originalPosition') - $thisSticky.data('originalHeight') + 140) {
+                      $prevSticky.removeClass("absolute").removeAttr("style");
+                  }
+              }
 
-                    $prevSticky.removeClass("absolute").removeAttr("style");
-                }
-            }
-
-            if ($window.scrollTop() > 1000) {
-                $('.arrow').removeClass('hidden');
-            } else {
-                $('.arrow').addClass('hidden');
-            }
-
-        });
+          });
+        } else {
+          if ($window.scrollTop() > 1000) {
+            $('.arrow').removeClass('hidden');
+          } else {
+            $('.arrow').addClass('hidden');
+          }
+        }
     };
 
     return {

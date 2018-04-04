@@ -4,6 +4,10 @@ $(function(){
        $(".art1").toggleClass("active");
    });
 
+   $(".clickable").click(function(){
+       $(".mobilehidden").toggleClass("show");
+   });
+
    $("#newwebsite").click(function(){
        $(".emailform").toggleClass("hidden");
    });
@@ -62,9 +66,7 @@ $(function(){
        $(".row4").toggleClass("hidden");
        $(".ellipsis").toggleClass("hidden");
 
-       if($(window).width() > 1023) {
-           stickyHeaders.load($(".sectionHeader"));
-       }
+       stickyHeaders.load($(".sectionHeader"));
 
    });
 
