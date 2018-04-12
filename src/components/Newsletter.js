@@ -16,7 +16,7 @@ class Newsletter extends React.Component {
   toggleForm() {
     const elementsToToggle = document.querySelectorAll('[data-toggle]');
     [].forEach.call(elementsToToggle, (elem) => {
-      elem.classList.toggle('src-components----components-module---mobilehidden---1hed_');
+      elem.classList.toggle(styles.mobilehidden);
     });
   }
 
