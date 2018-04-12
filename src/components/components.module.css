@@ -264,7 +264,7 @@ input[type=text]::placeholder {
 	}
 
 	.landing {
-		background-image: url("/images/splashscreen_bg.jpg");
+		background-image: url("../../public/images/splashscreen_bg.jpg");
 		background-position: top;
 		position: fixed;
 	}
@@ -297,7 +297,7 @@ input[type=text]::placeholder {
 	}
 
 	.landing {
-		background-image: url("/images/splashscreen_bg.jpg");
+		background-image: url("../../public/images/splashscreen_bg.jpg");
 		background-position: top;
 		position: fixed;
 		height: 1015px;
@@ -450,6 +450,7 @@ input[type=text]::placeholder {
 		text-align: center;
 		width: 100vw;
 		top: 60px;
+		z-index: 4;
 	}
 
 	.row4 {
