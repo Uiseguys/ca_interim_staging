@@ -14,15 +14,15 @@ class Sticky extends React.Component {
         const nextStickyInitial = arr[i+1] ? parseInt(arr[i+1].getAttribute('data-sticky-initial'), 10) : null;
 
         if (stickyInitial <= top + 60) {
-          sticky.classList.add('src-components----components-module---sticky---2kzpb');
+          sticky.classList.add(styles.sticky);
           if (arr[i+1] && sticky.querySelector('div').getBoundingClientRect().top + top >= nextStickyInitial-30) {
-            sticky.classList.add('src-components----components-module---absolute---2Sk1q');
+            sticky.classList.add(styles.absolute);
             sticky.querySelector('div').style.top = `${nextStickyInitial}px`;
           }
         } else {
-          sticky.classList.remove('src-components----components-module---sticky---2kzpb');
+          sticky.classList.remove(styles.sticky);
           if (arr[i-1] && top <= stickyInitial) {
-            arr[i-1].classList.remove('src-components----components-module---absolute---2Sk1q');
+            arr[i-1].classList.remove(styles.absolute);
             arr[i-1].querySelector('div').style.top = '';
           }
         }
