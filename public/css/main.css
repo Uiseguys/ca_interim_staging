@@ -150,9 +150,14 @@ input[type=text]::placeholder {
 	text-align: left;
 }
 
-.art1, .art2, .art3 {
+.art1, .art2, .art3, .art4, .art5, .art6, .art7 {
 	margin-top: 20px;
 	margin-bottom: 80px;
+}
+
+#project2 .art1,
+#project3 .art1 {
+	height: auto;
 }
 
 .artworkImg, .row3 {
@@ -160,15 +165,14 @@ input[type=text]::placeholder {
 	margin: 0 auto;
 }
 
-.art1 {
+.art1, .art2, .art3,
+.art4, .art5, .art6 {
 	display: none;
 }
 
-.art2 {
-	display: none;
-}
-
-.art3 {
+.art1a, .art1b, .art1c,
+.art2a, .art2b, .art2c,
+.art3a, .art3b, .art3c {
 	display: none;
 }
 
