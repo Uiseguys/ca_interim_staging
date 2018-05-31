@@ -1,0 +1,109 @@
+{
+  "_args": [
+    [
+      "@ui-guys/stencil-bs-ui-lib@0.3.55",
+      "/home/vanessa/projects/static-site-seed"
+    ]
+  ],
+  "_from": "@ui-guys/stencil-bs-ui-lib@0.3.55",
+  "_id": "@ui-guys/stencil-bs-ui-lib@0.3.55",
+  "_inBundle": false,
+  "_integrity": "sha512-5fEkLL+A+NZEnXQJmsJIr9zLXJLoyMTQsJgSTN3HY50VMaE2ICrIpKZpkK3lMpRac5K+jLf0CXuEf26atuXWzQ==",
+  "_location": "/@ui-guys/stencil-bs-ui-lib",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@ui-guys/stencil-bs-ui-lib@0.3.55",
+    "name": "@ui-guys/stencil-bs-ui-lib",
+    "escapedName": "@ui-guys%2fstencil-bs-ui-lib",
+    "scope": "@ui-guys",
+    "rawSpec": "0.3.55",
+    "saveSpec": null,
+    "fetchSpec": "0.3.55"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@ui-guys/stencil-bs-ui-lib/-/stencil-bs-ui-lib-0.3.55.tgz",
+  "_spec": "0.3.55",
+  "_where": "/home/vanessa/projects/static-site-seed",
+  "author": {
+    "name": "wiseguys-admin",
+    "email": "admin@uiguys.berlin"
+  },
+  "browser": "dist/index.js",
+  "bugs": {
+    "url": "https://github.com/Uiseguys/stencil-bs-ui-lib/issues"
+  },
+  "collection": "dist/collection/collection-manifest.json",
+  "dependencies": {
+    "@divsbhalala/video-js-thumbnails": "^1.0.0",
+    "@stencil/core": "0.6.3",
+    "@stencil/dev-server": "latest",
+    "@stencil/sass": "0.0.2",
+    "@stencil/utils": "latest",
+    "@types/jest": "^21.1.1",
+    "@types/video.js": "^6.2.3",
+    "@ui-guys/stencil-markdown": "^1.0.0",
+    "ajv": "^6.1.1",
+    "bootstrap": "^4.0.0",
+    "bootstrap.native": "^2.0.21",
+    "http-server": "^0.11.1",
+    "jest": "^21.2.1",
+    "lodash": "^4.17.4",
+    "moment": "^2.20.1",
+    "pikaday": "^1.7.0",
+    "popper.js": "^1.12.9",
+    "tooltip.js": "^1.1.7",
+    "tslint": "^5.7.0",
+    "video.js": "^6.6.0",
+    "videojs-font": "^2.0.0"
+  },
+  "description": "Bootstrap componentes built with StencilJS",
+  "devDependencies": {
+    "@stencil/sass": "0.0.2",
+    "@types/googlemaps": "^3.30.7"
+  },
+  "engines": {
+    "node": ">=6.11.0"
+  },
+  "files": [
+    "dist/"
+  ],
+  "homepage": "https://github.com/Uiseguys/stencil-bs-ui-lib",
+  "jest": {
+    "transform": {
+      "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/@stencil/core/testing/jest.preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(tsx?|jsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json",
+      "jsx"
+    ]
+  },
+  "license": "MIT",
+  "main": "dist/index.js",
+  "name": "@ui-guys/stencil-bs-ui-lib",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Uiseguys/stencil-bs-ui-lib.git"
+  },
+  "scripts": {
+    "build": "stencil build --no-cache",
+    "dev": "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\" ",
+    "heroku-postbuild": "npm run build",
+    "publish": "npm publish --dry-run --access public",
+    "serve": "stencil-dev-server",
+    "serve:heroku": "http-server www",
+    "start": "npm run dev",
+    "test": "jest --no-cache",
+    "test.watch": "jest --watch --no-cache"
+  },
+  "types": "dist/types/components.d.ts",
+  "version": "0.3.55"
+}
