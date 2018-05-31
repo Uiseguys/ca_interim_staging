@@ -24,6 +24,11 @@ $(function(){
         $("#art5a").toggleClass("active");
     });
 
+    $("#projectTitle6").click(function(){
+        $("#artworks6").toggleClass("active");
+        $("#art6a").toggleClass("active");
+    });
+
    $("#newwebsite").click(function(){
        $(".emailform").toggleClass("hidden");
    });
@@ -193,6 +198,48 @@ $(function(){
     $("#art4g").on('swiperight', function(){
         $("#art4g").toggleClass("active");
         $("#art4f").toggleClass("active");
+    });
+
+
+    /*
+
+     Third block
+
+     */
+
+    $("#art6a").click(function(){
+        $("#art6a").toggleClass("active");
+        $("#art6b").toggleClass("active");
+    });
+
+    $("#art6b").click(function(){
+        $("#art6b").toggleClass("active");
+        $("#art6a").toggleClass("active");
+    });
+
+    // swipeleft
+
+    $("#art6a").on('swipeleft', function(){
+        $("#art6a").toggleClass("active");
+        $("#art6b").toggleClass("active");
+    });
+
+    $("#art6b").on('swipeleft', function(){
+        $("#art6b").toggleClass("active");
+        $("#art6a").toggleClass("active");
+    });
+
+
+    // swiperight
+
+    $("#art6a").on('swiperight', function(){
+        $("#art6a").toggleClass("active");
+        $("#art6b").toggleClass("active");
+    });
+
+    $("#art6b").on('swiperight', function(){
+        $("#art6b").toggleClass("active");
+        $("#art6a").toggleClass("active");
     });
 
 
