@@ -29,6 +29,11 @@ $(function(){
         $("#art6a").toggleClass("active");
     });
 
+    $("#projectTitle7").click(function(){
+        $("#artworks7").toggleClass("active");
+        $("#art7a").toggleClass("active");
+    });
+
    $("#newwebsite").click(function(){
        $(".emailform").toggleClass("hidden");
    });
