@@ -166,7 +166,7 @@ input[type=text]::placeholder {
 }
 
 .art1, .art2, .art3,
-.art4, .art5, .art6 {
+.art4, .art5, .art6, .art7 {
 	display: none;
 }
 
@@ -330,80 +330,80 @@ input[type=text]::placeholder {
 }
 
 @media only screen and (min-width: 1025px) {
-	
+
 	/* custom styles */
 	.small {
 		font-size: 13px;
 	}
-	
+
 	.big {
 		font-size: 29px;
 	}
-	
+
 	.standard {
 		font-size: 25px;
 	}
-	
+
 	.overlap {
 		z-index: 3;
 		position: absolute;
 	}
-	
+
 	.introBackground {
 		background-image: url("/images/splashscreen_bg.jpg");
 		background-position: top;
 		position: fixed;
 	}
-	
+
 	/* custom styles */
 	.artworkImg {
 		width: 700px;
 	}
-	
+
 	.row3 {
 		width: 700px;
 		margin: 0;
 	}
-	
+
 	.artworks {
 		margin-top: 50px;
 		display: none;
 	}
-	
+
 	.art1, .art2, .art3 {
 		margin-top: 50px;
 		margin-bottom: 120px;
 		height: 900px;
 		width: 70vw;
 	}
-	
+
 	.art1 {
 		display: none;
 	}
-	
+
 	.art2 {
 		display: none;
 	}
-	
+
 	.art3 {
 		display: none;
 	}
-	
+
 	.active {
 		display: block;
 	}
-	
+
 	.invisible {
 		height: 1000px;
 	}
-	
+
 	form {
 		padding-left: 0;
 		margin: 0;
 		width: 300px;
 		padding-right: 0;
 	}
-	
+
 	input[type=submit] {
 		height: 32px;
 		width: 32px;
@@ -411,7 +411,7 @@ input[type=text]::placeholder {
 		font-size: 15px;
 		vertical-align: middle;
 	}
-	
+
 	input[type=text] {
 		height: 32px;
 		width: 215px;
@@ -421,112 +421,112 @@ input[type=text]::placeholder {
 		text-align: center;
 		border-radius: 0;
 
-		
+
 	}
-	
+
 	input[type=text]::placeholder {
 		font-size: 15px;
 	}
-	
+
 	#project1 {
 		margin-bottom: 150px;
 	}
-	
+
 	#project2 {
 		margin-bottom: 165px;
 	}
-	
+
 	#project3 {
 		margin-bottom: 117px;
 	}
-	
+
 	.project {
 		margin-bottom: 90px;
 		text-align: left;
 	}
-	
+
 	.contact {
 		margin-top: 125px;
 		margin-bottom: 200px;
 	}
-	
+
 	.contactdetails {
 		margin-bottom: 57px;
 	}
-	
+
 	.row1 {
 		margin-top: 205px;
 		padding-left: 5%;
 	}
-	
+
 	.column01 {
 		float: left;
 		width: 790px;
 	}
-	
+
 	.column02 {
 		float: left;
 		width: 867px;
 	}
-	
+
 	.column11 {
 		float: left;
 		width: 1313px;
 		margin-bottom: 167px;
 	}
-	
+
 	.column12 {
 		position: absolute;
 		right: 0;
 		width: 290px;
 		text-align: left;
 	}
-	
+
 	.column12 p {
 		max-width: 280px;
 	}
-	
+
 	.column21 {
 		float: left;
 		min-width: 200px;
 		width: 20%;
 	}
-	
+
 	.column22 {
 		float: right;
 		width: 80%;
 	}
-	
+
 	.column31 {
 		float: left;
 	}
-	
+
 	.column32 {
 		float: right;
 	}
-	
+
 	.col1, .col2, .col3 {
 		float: left;
 		text-align: left;
 		font-size: 15px;
 	}
-	
+
 	.col1 {
 		min-width: 200px;
 		width: 15%;
 	}
-	
+
 	.col2 {
 		min-width: 200px;
 		width: 25%;
 	}
-	
+
 	.col3 {
 		min-width: 200px;
 		width: 25%;
 		margin-right: 0;
 	}
-	
+
 	.titleHeader {
 		position: fixed;
 		text-align: center;
@@ -534,37 +534,37 @@ input[type=text]::placeholder {
 		z-index: 2;
 		top: 60px;
 	}
-	
+
 	.firstheader {
 		padding-top: 0px;
 	}
-	
+
 	.titleHeader.intro {
 		color: #fff;
 	}
-	
+
 	.contactdetails {
 		text-align: left;
 		padding-left: 5%;
 	}
-	
+
 	.sectionHeader {
 		position: relative;
 		z-index: 1;
 		text-align: left;
 		padding-left: 5%;
 	}
-	
+
 	.sectionHeader span {
 		display: block;
 		transform: translate(0, 30px);
 		transition: transform ease-out 0.2s;
 	}
-	
+
 	.sectionHeader.firstheader span {
 		transform: translate(0, 0);
 	}
-	
+
 	.sectionHeader.fixed {
 		position: fixed;
 		top: 60px;
@@ -572,73 +572,73 @@ input[type=text]::placeholder {
 		box-sizing: border-box;
 		z-index: 0;
 	}
-	
+
 	.sectionHeader.fixed span {
 		transform: translate(0, 0);
 	}
-	
+
 	.sectionHeader.fixed.absolute {
 		position: absolute;
 	}
-	
+
 	.landing {
 		height: 1015px;
 		width: 1920px;
 	}
-	
+
 	.row4 {
 		margin-top: 122px;
 	}
-	
+
 	.imprintdetails {
 		margin-bottom: 35px;
 		font-size: 15px;
 	}
-	
+
 	/* Clear floats after the columns */
 	.row4:after {
 		content: "";
 		display: table;
 		clear: both;
 	}
-	
+
 	.row3:after {
 		content: "";
 		display: table;
 		clear: both;
 	}
-	
+
 	.row2:after {
 		content: "";
 		display: table;
 		clear: both;
 	}
-	
+
 	.row1:after {
 		content: "";
 		display: table;
 		clear: both;
 	}
-	
+
 	.row0:after {
 		content: "";
 		display: table;
 		clear: both;
 	}
-	
+
 	.mobileonly {
 		display: none;
 	}
-	
+
 	.desktoponly {
 		display: inherit;
 	}
-	
+
 	.firstpar {
 		margin-bottom: 30px;
 		max-width: 410px;
 	}
-	
+
 	.contactdetails a {
 		text-decoration: none;
 	}
@@ -646,35 +646,35 @@ input[type=text]::placeholder {
 	.underline {
 		text-decoration: none;
 	}
-	
+
 	.underline:hover {
 		text-decoration: underline;
 		cursor: pointer;
 	} */
-    
+
     a {
 	    text-decoration: none;
     }
-	
+
 	a:hover {
 		text-decoration: underline;
 	}
-	
+
 }
 
 @media only screen and (min-width: 1750px) {
 	.imprintdetails {
 		font-size: 25px;
 	}
-	
+
 	.big {
 		font-size: 38px;
 	}
-	
+
 	.column12 {
 		width: 370px;
 	}
-	
+
 	.column12 p {
 		max-width: 380px;
 	}

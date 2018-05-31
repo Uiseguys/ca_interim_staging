@@ -102,6 +102,16 @@ $(function(){
 
     $("#art4e").click(function(){
         $("#art4e").toggleClass("active");
+        $("#art4f").toggleClass("active");
+    });
+
+    $("#art4f").click(function(){
+        $("#art4f").toggleClass("active");
+        $("#art4g").toggleClass("active");
+    });
+
+    $("#art4g").click(function(){
+        $("#art4g").toggleClass("active");
         $("#art4a").toggleClass("active");
     });
 
@@ -129,6 +139,16 @@ $(function(){
 
     $("#art4e").on('swipeleft', function(){
         $("#art4e").toggleClass("active");
+        $("#art4f").toggleClass("active");
+    });
+
+    $("#art4f").on('swipeleft', function(){
+        $("#art4f").toggleClass("active");
+        $("#art4g").toggleClass("active");
+    });
+
+    $("#art4g").on('swipeleft', function(){
+        $("#art4g").toggleClass("active");
         $("#art4a").toggleClass("active");
     });
 
@@ -137,7 +157,7 @@ $(function(){
 
     $("#art4a").on('swiperight', function(){
         $("#art4a").toggleClass("active");
-        $("#art4e").toggleClass("active");
+        $("#art4g").toggleClass("active");
     });
 
     $("#art4b").on('swiperight', function(){
@@ -158,6 +178,16 @@ $(function(){
     $("#art4e").on('swiperight', function(){
         $("#art4e").toggleClass("active");
         $("#art4d").toggleClass("active");
+    });
+
+    $("#art4f").on('swiperight', function(){
+        $("#art4f").toggleClass("active");
+        $("#art4e").toggleClass("active");
+    });
+
+    $("#art4g").on('swiperight', function(){
+        $("#art4g").toggleClass("active");
+        $("#art4f").toggleClass("active");
     });
 
 
