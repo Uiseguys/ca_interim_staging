@@ -691,4 +691,8 @@ input[type=text]::placeholder {
 		padding: 0 7%;
 		text-align: left;
 	}
+
+	#projectTitle7 {
+		padding: 0 5%;
+	}
 }
