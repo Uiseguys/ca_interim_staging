@@ -692,7 +692,7 @@ input[type=text]::placeholder {
 		text-align: left;
 	}
 
-	/* #projectTitle7 {
+	#projectTitle6, #projectTitle7, #projectTitle8 {
 		padding: 0 5%;
-	} */
+	}
 }
