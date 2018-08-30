@@ -150,15 +150,15 @@ input[type=text]::placeholder {
 	text-align: left;
 }
 
-.art1, .art2, .art3, .art4, .art5, .art6, .art7 {
+.art1, .art2, .art3, .art4, .art5, .art6, .art7, .art8, .art9, .art10 {
 	margin-top: 20px;
 	margin-bottom: 80px;
 }
 
-#project2 .art1,
+/* #project2 .art1,
 #project3 .art1 {
 	height: auto;
-}
+} */
 
 .artworkImg, .row3 {
 	width: 85%;
@@ -166,7 +166,7 @@ input[type=text]::placeholder {
 }
 
 .art1, .art2, .art3,
-.art4, .art5, .art6, .art7 {
+.art4, .art5, .art6, .art7, .art8, .art9, .art10 {
 	display: none;
 }
 
@@ -272,11 +272,11 @@ input[type=text]::placeholder {
 	margin-bottom: 20px;
 }
 
-#project1, #project2, #project3 {
+/* #project1, #project2, #project3 {
 	margin-bottom: 90px;
-}
+} */
 
-#project4, #project5, #project6, #project7, #project8 {
+#project4, #project5, #project6, #project7, #project8, #project9 {
 	margin-bottom: 120px;
 }
 
@@ -428,7 +428,7 @@ input[type=text]::placeholder {
 		font-size: 15px;
 	}
 
-	#project1 {
+	/* #project1 {
 		margin-bottom: 150px;
 	}
 
@@ -438,7 +438,7 @@ input[type=text]::placeholder {
 
 	#project3 {
 		margin-bottom: 117px;
-	}
+	} */
 
 	.project {
 		margin-bottom: 90px;
@@ -692,7 +692,7 @@ input[type=text]::placeholder {
 		text-align: left;
 	}
 
-	#projectTitle7 {
+	/* #projectTitle7 {
 		padding: 0 5%;
-	}
+	} */
 }
