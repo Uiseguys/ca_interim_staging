@@ -63,24 +63,10 @@ form {
 input[type=submit] {
 	background-color: transparent;
 	background-repeat: no-repeat;
-	border: none;
-	cursor: pointer;
-	overflow: hidden;
-	outline: none;
-	height: 70px;
-	width: 70px;
-	line-height: 70px;
-	font-size: 25px;
-	font-family: "Everyday", "Heebo";
-}
-
-input[type=text] {
-	height: 70px;
-	width: 70vw;
-	line-height: 25px;
+	height: 45px;
+	width: 150px;
 	border: 3px solid #000;
 	vertical-align: middle;
-	font-size: 25px;
 	font-family: "Everyday", "Heebo";
 	text-align: center;
 	-webkit-appearance: none;
@@ -405,10 +391,8 @@ input[type=text]::placeholder {
 	}
 
 	input[type=submit] {
-		height: 32px;
-		width: 32px;
-		line-height: 32px;
-		font-size: 15px;
+		height: 45px;
+		width: 150px;
 		vertical-align: middle;
 	}
 
