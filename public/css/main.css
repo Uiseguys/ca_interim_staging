@@ -54,13 +54,14 @@ input::-o-input-placeholder {
 	text-align: center;
 }
 
-form {
+div.buttondiv {
 	padding: 40px;
 	width: 70%;
 	margin: 0 auto;
 }
 
 input[type=submit] {
+	padding-bottom: 5px;
 	background-color: transparent;
 	background-repeat: no-repeat;
 	height: 45px;
@@ -383,7 +384,7 @@ input[type=text]::placeholder {
 		height: 1000px;
 	}
 
-	form {
+	div.buttondiv {
 		padding-left: 0;
 		margin: 0;
 		width: 300px;
@@ -391,6 +392,7 @@ input[type=text]::placeholder {
 	}
 
 	input[type=submit] {
+		padding-right: 0;
 		height: 45px;
 		width: 150px;
 		vertical-align: middle;

@@ -23,7 +23,9 @@
 		<div class="column12">
 			<div class="desktoponly">
 				<p class="big">New website on the way, be informed about Christians' works, exhibitions and projects</p>
-					<input id="subscribeButton1" type=submit value="Subscribe" class="standard"/>
+					<div class="buttondiv">
+						<input id="subscribeButton1" type=submit value="Subscribe" class="standard"/>
+					</div>
 				<div id="thankyou1" style="display: none">
 					Thank you!
 				</div>
@@ -35,7 +37,9 @@
 				</div>
 				<div class="emailform standard hidden">
 					<p class="">be informed about Christians' works, exhibitions and projects</p>
-					<input id="subscribeButton2" type=submit value="Subscribe" class="standard"/>
+					<div class="buttondiv">
+						<input id="subscribeButton2" type=submit value="Subscribe" class="standard"/>
+					</div>
 					<div id="thankyou2" style="display: none">
 						Thank you!
 					</div>
@@ -672,24 +676,18 @@
         $(document).ready(function () {
 
 						$('#subscribeButton1').click(function() {
-							console.log('clicked');
-							// if ($('head > script[src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js"]')) {
-							// 	$.getScript('//downloads.mailchimp.com/js/signup-forms/popup/embed.js');
-							// } else {
+							// console.log('clicked');
 								$('head').append('<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"><\/script>');
 								setTimeout(() => {
 									$('head').append('<script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us12.list-manage.com","uuid":"2c4c13ac6f0d5aec467898a0a","lid":"aacd35f635","uniqueMethods":false}) })<\/script>');
-									$.getScript('//downloads.mailchimp.com/js/signup-forms/popup/embed.js');
 								}, 2000);
-							// }
 						});
 
 						$('#subscribeButton2').click(function() {
-							console.log('clicked');
+							// console.log('clicked');
             $('head').append('<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"><\/script>');
             setTimeout(() => {
 							$('head').append('<script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us12.list-manage.com","uuid":"2c4c13ac6f0d5aec467898a0a","lid":"aacd35f635","uniqueMethods":false}) })<\/script>');
-							$.getScript('//downloads.mailchimp.com/js/signup-forms/popup/embed.js');
 						}, 2000);
 						});
         });
