@@ -206,7 +206,7 @@
 									acrylic on canvas, 120 x 100 cm
 								</div>
 								<div class="column32 small">
-									1/5
+									1/6
 								</div>
 							</div>
 						</div>
@@ -219,7 +219,7 @@
 									Galerie Ludorff, 2018
 								</div>
 								<div class="column32 small">
-									2/5
+									2/6
 								</div>
 							</div>
 						</div>
@@ -232,7 +232,7 @@
 									acrylic on canvas, 120 x 100 cm
 								</div>
 								<div class="column32 small">
-									3/5
+									3/6
 								</div>
 							</div>
 						</div>
@@ -245,12 +245,25 @@
 									acrylic on canvas, 180 x 220 cm
 								</div>
 								<div class="column32 small">
-									4/5
+									4/6
 								</div>
 							</div>
 						</div>
 
 						<div class="art5" id="art2e">
+							<img class="artworkImg" src="images/Awe_0114_korr.jpg"/>
+							<div class=row3>
+								<div class="column31 small">
+									transcend, exhibition view<br />
+									Galerie Ludorff, 2018
+								</div>
+								<div class="column32 small">
+									5/6
+								</div>
+							</div>
+						</div>
+
+						<div class="art6" id="art2f">
 							<img class="artworkImg" src="images/Christian_Awe_transcend_Galerie_Ludorff_2018_1.jpg"/>
 							<div class=row3>
 								<div class="column31 small">
@@ -258,7 +271,7 @@
 									Galerie Ludorff, 2018
 								</div>
 								<div class="column32 small">
-									5/5
+									6/6
 								</div>
 							</div>
 						</div>
@@ -686,17 +699,17 @@
 
 						$('#subscribeButton1').click(function() {
 							// console.log('clicked');
-								$('head').append('<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"><\/script>');
+								$('head').append('<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"><\/script>');
 								setTimeout(() => {
-									$('head').append('<script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us12.list-manage.com","uuid":"2c4c13ac6f0d5aec467898a0a","lid":"aacd35f635","uniqueMethods":false}) })<\/script>');
+									$('head').append('<script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us12.list-manage.com","uuid":"2c4c13ac6f0d5aec467898a0a","lid":"aacd35f635","uniqueMethods":true}) })<\/script>');
 								}, 2000);
 						});
 
 						$('#subscribeButton2').click(function() {
 							// console.log('clicked');
-            $('head').append('<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"><\/script>');
+            $('head').append('<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"><\/script>');
             setTimeout(() => {
-							$('head').append('<script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us12.list-manage.com","uuid":"2c4c13ac6f0d5aec467898a0a","lid":"aacd35f635","uniqueMethods":false}) })<\/script>');
+							$('head').append('<script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us12.list-manage.com","uuid":"2c4c13ac6f0d5aec467898a0a","lid":"aacd35f635","uniqueMethods":true}) })<\/script>');
 						}, 2000);
 						});
         });
