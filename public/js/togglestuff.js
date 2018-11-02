@@ -161,11 +161,6 @@ $(function(){
 
      $("#art2e").click(function(){
          $("#art2e").toggleClass("active");
-         $("#art2f").toggleClass("active");
-     });
-
-     $("#art2f").click(function(){
-         $("#art2f").toggleClass("active");
          $("#art2a").toggleClass("active");
      });
 
@@ -193,11 +188,6 @@ $(function(){
 
      $("#art2e").on('swipeleft', function(){
          $("#art2e").toggleClass("active");
-         $("#art2f").toggleClass("active");
-     });
-
-     $("#art2f").on('swipeleft', function(){
-         $("#art2f").toggleClass("active");
          $("#art2a").toggleClass("active");
      });
 
@@ -205,7 +195,7 @@ $(function(){
 
      $("#art2a").on('swiperight', function(){
          $("#art2a").toggleClass("active");
-         $("#art2f").toggleClass("active");
+         $("#art2e").toggleClass("active");
      });
 
      $("#art2b").on('swiperight', function(){
@@ -226,11 +216,6 @@ $(function(){
      $("#art2e").on('swiperight', function(){
          $("#art2e").toggleClass("active");
          $("#art2d").toggleClass("active");
-     });
-
-     $("#art2f").on('swiperight', function(){
-         $("#art2f").toggleClass("active");
-         $("#art2e").toggleClass("active");
      });
 
     /* last Block */
