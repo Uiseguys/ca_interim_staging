@@ -19,6 +19,31 @@ $(function(){
         $("#art4a").toggleClass("active");
     });
 
+    $("#projectTitle01").click(function(){
+        $("#artworks01").toggleClass("active");
+        $("#art01a").toggleClass("active");
+    });
+    $("#projectTitle02").click(function(){
+        $("#artworks02").toggleClass("active");
+        $("#art02a").toggleClass("active");
+    });
+    $("#projectTitle03").click(function(){
+        $("#artworks03").toggleClass("active");
+        $("#art03a").toggleClass("active");
+    });
+    $("#projectTitle04").click(function(){
+        $("#artworks04").toggleClass("active");
+        $("#art04a").toggleClass("active");
+    });
+    $("#projectTitle05").click(function(){
+        $("#artworks05").toggleClass("active");
+        $("#art05a").toggleClass("active");
+    });
+    $("#projectTitle06").click(function(){
+        $("#artworks06").toggleClass("active");
+        $("#art06a").toggleClass("active");
+    });
+
     // $("#projectTitle5").click(function(){
     //     $("#artworks5").toggleClass("active");
     //     $("#art5a").toggleClass("active");
@@ -375,6 +400,245 @@ $(function(){
         $("#art4i").toggleClass("active");
     });
 
+
+    // Latest Posts
+
+
+  /*
+
+     new First Block
+
+     */
+
+    $("#art01a").click(function(){
+        $("#art01a").toggleClass("active");
+        $("#art01b").toggleClass("active");
+    });
+
+    $("#art01b").click(function(){
+        $("#art01b").toggleClass("active");
+        $("#art01c").toggleClass("active");
+    });
+
+    $("#art01c").click(function(){
+        $("#art01c").toggleClass("active");
+        $("#art01a").toggleClass("active");
+    });
+
+   
+
+    // swipeleft
+
+    $("#art01a").on('swipeleft', function(){
+        $("#art01a").toggleClass("active");
+        $("#art01b").toggleClass("active");
+    });
+
+    $("#art01b").on('swipeleft', function(){
+        $("#art01b").toggleClass("active");
+        $("#art01c").toggleClass("active");
+    });
+
+    $("#art01c").on('swipeleft', function(){
+        $("#art01c").toggleClass("active");
+        $("#art01a").toggleClass("active");
+    });
+
+
+    // swiperight
+
+    $("#art01a").on('swiperight', function(){
+        $("#art01a").toggleClass("active");
+        $("#art01c").toggleClass("active");
+    });
+
+    $("#art01b").on('swiperight', function(){
+        $("#art01b").toggleClass("active");
+        $("#art01a").toggleClass("active");
+    });
+
+    $("#art01c").on('swiperight', function(){
+        $("#art01c").toggleClass("active");
+        $("#art01b").toggleClass("active");
+    });
+
+
+
+  /*
+
+     new Second Block
+
+     */
+
+    $("#art02a").click(function(){
+        $("#art02a").toggleClass("active");
+        $("#art02b").toggleClass("active");
+    });
+
+    $("#art02b").click(function(){
+        $("#art02b").toggleClass("active");
+        $("#art02c").toggleClass("active");
+    });
+
+    $("#art02c").click(function(){
+        $("#art02c").toggleClass("active");
+        $("#art02a").toggleClass("active");
+    });
+
+   
+
+    // swipeleft
+
+    $("#art02a").on('swipeleft', function(){
+        $("#art02a").toggleClass("active");
+        $("#art02b").toggleClass("active");
+    });
+
+    $("#art02b").on('swipeleft', function(){
+        $("#art02b").toggleClass("active");
+        $("#art02c").toggleClass("active");
+    });
+
+    $("#art02c").on('swipeleft', function(){
+        $("#art02c").toggleClass("active");
+        $("#art02a").toggleClass("active");
+    });
+
+
+    // swiperight
+
+    $("#art02a").on('swiperight', function(){
+        $("#art02a").toggleClass("active");
+        $("#art02c").toggleClass("active");
+    });
+
+    $("#art02b").on('swiperight', function(){
+        $("#art02b").toggleClass("active");
+        $("#art02a").toggleClass("active");
+    });
+
+    $("#art02c").on('swiperight', function(){
+        $("#art02c").toggleClass("active");
+        $("#art02b").toggleClass("active");
+    });
+
+
+  /*
+
+     new 3rd Block
+
+     */
+
+    $("#art03a").click(function(){
+        $("#art03a").toggleClass("active");
+        $("#art03b").toggleClass("active");
+    });
+
+    $("#art03b").click(function(){
+        $("#art03b").toggleClass("active");
+        $("#art03c").toggleClass("active");
+    });
+
+    $("#art03c").click(function(){
+        $("#art03c").toggleClass("active");
+        $("#art03a").toggleClass("active");
+    });
+
+   
+
+    // swipeleft
+
+    $("#art03a").on('swipeleft', function(){
+        $("#art03a").toggleClass("active");
+        $("#art03b").toggleClass("active");
+    });
+
+    $("#art03b").on('swipeleft', function(){
+        $("#art03b").toggleClass("active");
+        $("#art03c").toggleClass("active");
+    });
+
+    $("#art03c").on('swipeleft', function(){
+        $("#art03c").toggleClass("active");
+        $("#art03a").toggleClass("active");
+    });
+
+
+    // swiperight
+
+    $("#art03a").on('swiperight', function(){
+        $("#art03a").toggleClass("active");
+        $("#art03c").toggleClass("active");
+    });
+
+    $("#art03b").on('swiperight', function(){
+        $("#art03b").toggleClass("active");
+        $("#art03a").toggleClass("active");
+    });
+
+    $("#art03c").on('swiperight', function(){
+        $("#art03c").toggleClass("active");
+        $("#art03b").toggleClass("active");
+    });
+
+
+  /*
+
+     new 6th Block
+
+     */
+
+    $("#art06a").click(function(){
+        $("#art06a").toggleClass("active");
+        $("#art06b").toggleClass("active");
+    });
+
+    $("#art06b").click(function(){
+        $("#art06b").toggleClass("active");
+        $("#art06c").toggleClass("active");
+    });
+
+    $("#art06c").click(function(){
+        $("#art06c").toggleClass("active");
+        $("#art06a").toggleClass("active");
+    });
+
+   
+
+    // swipeleft
+
+    $("#art06a").on('swipeleft', function(){
+        $("#art06a").toggleClass("active");
+        $("#art06b").toggleClass("active");
+    });
+
+    $("#art06b").on('swipeleft', function(){
+        $("#art06b").toggleClass("active");
+        $("#art06c").toggleClass("active");
+    });
+
+    $("#art06c").on('swipeleft', function(){
+        $("#art06c").toggleClass("active");
+        $("#art06a").toggleClass("active");
+    });
+
+
+    // swiperight
+
+    $("#art06a").on('swiperight', function(){
+        $("#art06a").toggleClass("active");
+        $("#art06c").toggleClass("active");
+    });
+
+    $("#art06b").on('swiperight', function(){
+        $("#art06b").toggleClass("active");
+        $("#art06a").toggleClass("active");
+    });
+
+    $("#art06c").on('swiperight', function(){
+        $("#art06c").toggleClass("active");
+        $("#art06b").toggleClass("active");
+    });
 
     $(".landing").click(function(){
        $("body").toggleClass("introBackground");
