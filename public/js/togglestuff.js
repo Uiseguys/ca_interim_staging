@@ -78,6 +78,16 @@ $(function(){
         $("#art13a").toggleClass("active");
     });
 
+    $("#projectTitle14").click(function(){
+        $("#artworks14").toggleClass("active");
+        $("#art14a").toggleClass("active");
+    });
+
+    $("#projectTitle15").click(function(){
+        $("#artworks15").toggleClass("active");
+        $("#art15a").toggleClass("active");
+    });
+
     // $("#projectTitle5").click(function(){
     //     $("#artworks5").toggleClass("active");
     //     $("#art5a").toggleClass("active");
@@ -892,6 +902,63 @@ $(function(){
     $("#art13c").on('swiperight', function(){
         $("#art13c").toggleClass("active");
         $("#art13b").toggleClass("active");
+    });
+
+    /*
+
+     new 14th Block
+
+     */
+
+    $("#art14a").click(function(){
+        $("#art14a").toggleClass("active");
+        $("#art14b").toggleClass("active");
+    });
+
+    $("#art14b").click(function(){
+        $("#art14b").toggleClass("active");
+        $("#art14c").toggleClass("active");
+    });
+
+    $("#art14c").click(function(){
+        $("#art14c").toggleClass("active");
+        $("#art14a").toggleClass("active");
+    });
+
+
+    // swipeleft
+
+    $("#art14a").on('swipeleft', function(){
+        $("#art14a").toggleClass("active");
+        $("#art14b").toggleClass("active");
+    });
+
+    $("#art14b").on('swipeleft', function(){
+        $("#art14b").toggleClass("active");
+        $("#art14c").toggleClass("active");
+    });
+
+    $("#art14c").on('swipeleft', function(){
+        $("#art14c").toggleClass("active");
+        $("#art14a").toggleClass("active");
+    });
+
+
+    // swiperight
+
+    $("#art14a").on('swiperight', function(){
+        $("#art14a").toggleClass("active");
+        $("#art14c").toggleClass("active");
+    });
+
+    $("#art14b").on('swiperight', function(){
+        $("#art14b").toggleClass("active");
+        $("#art14a").toggleClass("active");
+    });
+
+    $("#art14c").on('swiperight', function(){
+        $("#art14c").toggleClass("active");
+        $("#art14b").toggleClass("active");
     });
 
 
